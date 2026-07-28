@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "replacements": [
+    { "token": "<WORKSHOP_ID>", "replacement": "<WORKSHOP_ID>" },
+    { "token": "<EXACT_VERSION>", "replacement": "<EXACT_VERSION>" },
+    { "token": "<SERVER_PROFILE>", "replacement": "<SERVER_PROFILE>" },
+    { "token": "<PROVIDER_TARGET>", "replacement": "<PROVIDER_TARGET>" },
+    { "token": "<SECRET_FROM_ENVIRONMENT>", "replacement": "<SECRET_FROM_ENVIRONMENT>" }
+  ]
+}

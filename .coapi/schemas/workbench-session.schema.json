@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/workbench-session.schema.json",
+  "title": "COAPI Workbench Session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "capturedAt",
+    "expiresAt",
+    "host",
+    "port",
+    "pid",
+    "processStartTime",
+    "executable",
+    "projectGuid",
+    "gprojPath",
+    "nonce",
+    "nonceEcho",
+    "scriptsCompiled",
+    "bridgeSchema",
+    "loadedProjectsFingerprint",
+    "listenerLocalAddress",
+    "networkExposure",
+    "netApiVerified",
+    "settingsFileSha256",
+    "portClassification"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "capturedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "host": {
+      "enum": [
+        "127.0.0.1",
+        "::1",
+        "localhost"
+      ]
+    },
+    "port": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "debuggerPort": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 65535
+    },
+    "pid": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "processStartTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "executable": {
+      "type": "string",
+      "minLength": 1
+    },
+    "executableSha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "workbenchBuild": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "projectGuid": {
+      "type": "string",
+      "pattern": "^[0-9A-Fa-f]{16}$"
+    },
+    "gprojPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nonce": {
+      "type": "string",
+      "minLength": 16
+    },
+    "nonceEcho": {
+      "type": "string",
+      "minLength": 16
+    },
+    "scriptsCompiled": {
+      "const": true
+    },
+    "bridgeSchema": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "loadedProjectsFingerprint": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sourceFingerprint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "listenerLocalAddress": {
+      "enum": [
+        "127.0.0.1",
+        "::1"
+      ]
+    },
+    "networkExposure": {
+      "const": "LOOPBACK_ONLY"
+    },
+    "netApiVerified": {
+      "const": true
+    },
+    "settingsFileSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "portClassification": {
+      "const": "NET_API"
+    }
+  }
+}

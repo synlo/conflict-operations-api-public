@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "states": [
+    "SOURCE_FROZEN",
+    "EXTERNAL_TOOLS_FROZEN",
+    "STATIC_GREEN",
+    "WORKBENCH_SESSION_VERIFIED",
+    "SCRIPTS_GREEN",
+    "LOCAL_SERVER_GREEN",
+    "LOCAL_CLIENT_GREEN",
+    "STAGING_CREATED",
+    "SERVER_PROFILE_RENDERED",
+    "PACKAGE_BUILT",
+    "PACKAGE_INSPECTED",
+    "ROLLBACK_DRILL_CURRENT",
+    "APPROVAL_RECEIPT_VALID",
+    "PUBLISH_AUTHORIZED",
+    "PUBLISHED",
+    "BACKEND_DISCOVERED",
+    "SERVER_PROFILE_PINNED",
+    "REMOTE_CONFIG_READBACK_MATCHED",
+    "SERVER_INSTALLED",
+    "SERVER_PROCESS_LOADED",
+    "PUBLIC_SESSION_ADVERTISED",
+    "CLEAN_CLIENT_DOWNLOADED",
+    "CLEAN_CLIENT_JOINED",
+    "RECONNECT_PASSED",
+    "RESTART_PASSED",
+    "PUBLIC_READY"
+  ],
+  "terminalFailureStates": [
+    "BLOCKED",
+    "ROLLED_BACK",
+    "PUBLISHED_NOT_PROMOTED"
+  ],
+  "rule": "No state implies another. Every transition requires a release-bound receipt, exact input hashes, and a valid operation-ledger chain."
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    { "source": ".publicmirror/public-source-allowlist.txt", "destination": ".publicmirror/public-source-allowlist.txt", "status": "COAPI_OWNED", "basis": "Project-owned public export policy." },
+    { "source": ".publicmirror/public-path-denylist.txt", "destination": ".publicmirror/public-path-denylist.txt", "status": "COAPI_OWNED", "basis": "Project-owned public export policy." },
+    { "source": ".publicmirror/public-content-deny-patterns.json", "destination": ".publicmirror/public-content-deny-patterns.json", "status": "COAPI_OWNED", "basis": "Project-owned redacted content policy." },
+    { "source": ".publicmirror/public-provenance.json", "destination": ".publicmirror/public-provenance.json", "status": "COAPI_OWNED", "basis": "Project-owned provenance policy." },
+    { "source": ".publicmirror/public-placeholders.json", "destination": ".publicmirror/public-placeholders.json", "status": "COAPI_OWNED", "basis": "Project-owned placeholder policy containing no operational values." },
+
+    { "source": ".coapi/control/mod-onboarding-state-machine.json", "destination": ".coapi/control/mod-onboarding-state-machine.json", "status": "COAPI_OWNED", "basis": "Project-authored generic control state machine." },
+    { "source": ".coapi/control/release-state-machine.json", "destination": ".coapi/control/release-state-machine.json", "status": "COAPI_OWNED", "basis": "Project-authored generic control state machine." },
+    { "source": ".coapi/control/rollback-drill-state-machine.json", "destination": ".coapi/control/rollback-drill-state-machine.json", "status": "COAPI_OWNED", "basis": "Project-authored generic control state machine." },
+    { "source": ".coapi/examples/task-contract.example.json", "destination": ".coapi/examples/task-contract.example.json", "status": "GENERATED_PUBLIC_SAFE", "basis": "Sanitized example with no operational identity or authority." },
+    { "source": ".coapi/policy/external-tool-policy.json", "destination": ".coapi/policy/external-tool-policy.json", "status": "COAPI_OWNED", "basis": "Project-owned default-deny external-tool policy; no handler or bridge implementation is included." },
+
+    { "source": ".coapi/schemas/approval-receipt.schema.json", "destination": ".coapi/schemas/approval-receipt.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/mod-catalog.schema.json", "destination": ".coapi/schemas/mod-catalog.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/modset-lock.schema.json", "destination": ".coapi/schemas/modset-lock.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/operation-ledger-entry.schema.json", "destination": ".coapi/schemas/operation-ledger-entry.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/provider-certification.schema.json", "destination": ".coapi/schemas/provider-certification.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/public-mirror-authorization.schema.json", "destination": ".coapi/schemas/public-mirror-authorization.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored public-source release schema." },
+    { "source": ".coapi/schemas/release-contract.schema.json", "destination": ".coapi/schemas/release-contract.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/release-manifest.schema.json", "destination": ".coapi/schemas/release-manifest.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/rollback-drill.schema.json", "destination": ".coapi/schemas/rollback-drill.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/server-profile.schema.json", "destination": ".coapi/schemas/server-profile.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+    { "source": ".coapi/schemas/task-contract.schema.json", "destination": ".coapi/schemas/task-contract.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored strict task contract schema." },
+    { "source": ".coapi/schemas/workbench-session.schema.json", "destination": ".coapi/schemas/workbench-session.schema.json", "status": "COAPI_OWNED", "basis": "Project-authored JSON schema." },
+
+    { "source": "Tools/COAPI/Acquire-COAPILock.ps1", "destination": "Tools/COAPI/Acquire-COAPILock.ps1", "status": "COAPI_OWNED", "basis": "Project-authored single-writer lock wrapper." },
+    { "source": "Tools/COAPI/Invoke-COAPIBounded.ps1", "destination": "Tools/COAPI/Invoke-COAPIBounded.ps1", "status": "COAPI_OWNED", "basis": "Project-authored bounded-command wrapper." },
+    { "source": "Tools/COAPI/Register-COAPIProgress.ps1", "destination": "Tools/COAPI/Register-COAPIProgress.ps1", "status": "COAPI_OWNED", "basis": "Project-authored progress wrapper." },
+    { "source": "Tools/COAPI/coapi_control.py", "destination": "Tools/COAPI/coapi_control.py", "status": "COAPI_OWNED", "basis": "Project-authored task, lock, ledger, and bounded-operation implementation." },
+    { "source": "Tools/COAPI/schema_migrations.py", "destination": "Tools/COAPI/schema_migrations.py", "status": "COAPI_OWNED", "basis": "Project-authored explicit schema migration implementation." },
+    { "source": "Tools/COAPI/Public/Export-COAPIPublicMirror.ps1", "destination": "Tools/COAPI/Public/Export-COAPIPublicMirror.ps1", "status": "COAPI_OWNED", "basis": "Project-authored public export entry point." },
+    { "source": "Tools/COAPI/Public/Test-COAPIPublicMirror.ps1", "destination": "Tools/COAPI/Public/Test-COAPIPublicMirror.ps1", "status": "COAPI_OWNED", "basis": "Project-authored public policy test entry point." },
+    { "source": "Tools/COAPI/Public/audit_public_export.py", "destination": "Tools/COAPI/Public/audit_public_export.py", "status": "COAPI_OWNED", "basis": "Project-authored redacted scanner and deterministic exporter." },
+    { "source": "Tools/COAPI/Public/test_audit_public_export.py", "destination": "Tools/COAPI/Public/test_audit_public_export.py", "status": "COAPI_OWNED", "basis": "Project-authored refusal and determinism tests." },
+    { "source": "Tests/policy/test_stage1_control_plane.py", "destination": "Tests/policy/test_stage1_control_plane.py", "status": "COAPI_OWNED", "basis": "Project-authored control-plane refusal tests." },
+
+    { "source": "README.md", "destination": "README.md", "status": "COAPI_OWNED", "basis": "Project-authored public landing documentation." },
+    { "source": "SECURITY.md", "destination": "SECURITY.md", "status": "COAPI_OWNED", "basis": "Project-authored public security policy." },
+    { "source": "CONTRIBUTING.md", "destination": "CONTRIBUTING.md", "status": "COAPI_OWNED", "basis": "Project-authored contribution policy." },
+    { "source": "NOTICE.md", "destination": "NOTICE.md", "status": "COAPI_OWNED", "basis": "Project-authored rights notice; no license grant is inferred." },
+    { "source": "Docs/ARCHITECTURE.md", "destination": "Docs/ARCHITECTURE.md", "status": "COAPI_OWNED", "basis": "Project-authored backend architecture documentation." },
+    { "source": "Docs/PUBLIC_MIRROR_POLICY.md", "destination": "Docs/PUBLIC_MIRROR_POLICY.md", "status": "COAPI_OWNED", "basis": "Project-authored public boundary documentation." },
+    { "source": ".github/workflows/public-policy.yml", "destination": ".github/workflows/public-policy.yml", "status": "GENERATED_PUBLIC_SAFE", "basis": "Static read-only GitHub-hosted workflow with pinned actions and no live authority." },
+    { "source": "requirements-public.txt", "destination": "requirements-public.txt", "status": "COAPI_OWNED", "basis": "Pinned validator dependency declarations; no vendored dependency source." }
+  ],
+  "excludedClasses": [
+    { "pathClass": "Reports and handoffs", "status": "EXCLUDED_PRIVATE_OPERATIONAL" },
+    { "pathClass": "LocalServer, logs, backups, proof runs, and provider data", "status": "EXCLUDED_PRIVATE_OPERATIONAL" },
+    { "pathClass": "Downloaded addons, base-game assets, and unverified third-party source", "status": "EXCLUDED_THIRD_PARTY" },
+    { "pathClass": "Any path without an exact entry above", "status": "EXCLUDED_UNKNOWN" }
+  ]
+}

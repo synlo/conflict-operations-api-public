@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/release-manifest.schema.json",
+  "title": "COAPI Release Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "releaseId",
+    "createdAt",
+    "gitCommit",
+    "sourceTreeSha256",
+    "gameBuild",
+    "workbenchBuild",
+    "gprojSha256",
+    "directModsetSha256",
+    "effectiveGraphSha256",
+    "stagingSha256",
+    "package",
+    "workshop",
+    "rollbackReleaseId",
+    "state",
+    "serverProfileSha256",
+    "renderedConfigSha256",
+    "externalToolsLockSha256",
+    "operationLedgerHeadSha256",
+    "rollbackDrillReceiptSha256"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "releaseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "gitCommit": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{40}$"
+    },
+    "sourceTreeSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "gameBuild": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workbenchBuild": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gprojSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "directModsetSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "effectiveGraphSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "scriptGraphSha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "stagingSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "logicalSha256",
+        "fileSha256"
+      ],
+      "properties": {
+        "logicalSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "fileSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "directory": {
+          "type": "string"
+        }
+      }
+    },
+    "workshop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "guid",
+        "requestedVersion"
+      ],
+      "properties": {
+        "guid": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{16}$"
+        },
+        "requestedVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publishedVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "backendDiscovered": {
+          "type": "boolean"
+        }
+      }
+    },
+    "server": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "client": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "rollbackReleaseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "serverProfileSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "renderedConfigSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "externalToolsLockSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "operationLedgerHeadSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "rollbackDrillReceiptSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

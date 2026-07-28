@@ -1,0 +1,325 @@
+{
+  "entries": [
+    {
+      "basis": "Project-authored generic control state machine.",
+      "destination": ".coapi/control/mod-onboarding-state-machine.json",
+      "outputSha256": "0c3001108d2a549331b31987d04d2b415e0e72e5d0860c5c26475e5de9b747f6",
+      "source": ".coapi/control/mod-onboarding-state-machine.json",
+      "sourceSha256": "de1a5a44b69e613e3b58f1dee2f51c1a1db1281b0a9316305ee132b51a908a78",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored generic control state machine.",
+      "destination": ".coapi/control/release-state-machine.json",
+      "outputSha256": "f97380a09741b84bb996de4b461b16d8f45ef5f6a7d89addebb9ccebf0989365",
+      "source": ".coapi/control/release-state-machine.json",
+      "sourceSha256": "17ff3a42bd9babcbe6a1072612c4075f99cd2f2c16fbc613db6cc77e083b424f",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored generic control state machine.",
+      "destination": ".coapi/control/rollback-drill-state-machine.json",
+      "outputSha256": "ca1d4aadb6a0f1f3332dd7de201685d7c0b8553eb753a6529d8db99e58a386b0",
+      "source": ".coapi/control/rollback-drill-state-machine.json",
+      "sourceSha256": "d930cf17724868ed6188d8932318e6ab6d40d122d1a289ba57fa12614b2240c4",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Sanitized example with no operational identity or authority.",
+      "destination": ".coapi/examples/task-contract.example.json",
+      "outputSha256": "41f5c82c115d8518f5f600de17ea30736a4797a6a87f0bb0de1f6adb8cba49bc",
+      "source": ".coapi/examples/task-contract.example.json",
+      "sourceSha256": "41f5c82c115d8518f5f600de17ea30736a4797a6a87f0bb0de1f6adb8cba49bc",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
+      "basis": "Project-owned default-deny external-tool policy; no handler or bridge implementation is included.",
+      "destination": ".coapi/policy/external-tool-policy.json",
+      "outputSha256": "c2fb4a372dcf09eb72f5c9cfb25886e5ae487dd996a3645924818c9a6a810a11",
+      "source": ".coapi/policy/external-tool-policy.json",
+      "sourceSha256": "91861c4cdc9ee7ef97cf8d76486cae964435cab9516d17cbfe9358877ae6dccc",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/approval-receipt.schema.json",
+      "outputSha256": "0190e0eb737f023eb130f3b6c2dc05ff66051703a0677280af3b587ec7fe5dda",
+      "source": ".coapi/schemas/approval-receipt.schema.json",
+      "sourceSha256": "a7660beeb0e509f1cb17b0985fd6701a525e895d25d610226df5a2f76d6622c5",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/mod-catalog.schema.json",
+      "outputSha256": "83818280fcbd333a4ae69468615e6011e9831a92d6cd71a86a170b81bd97cd65",
+      "source": ".coapi/schemas/mod-catalog.schema.json",
+      "sourceSha256": "88c49f7dd3a9cbac1bed804c1a894c3839196e55cef3e92ed587da06955aa9db",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/modset-lock.schema.json",
+      "outputSha256": "706bfb95206d4877e5fb06eb77472a6db3cc8d1f8dbedc30e485bc97aac835bf",
+      "source": ".coapi/schemas/modset-lock.schema.json",
+      "sourceSha256": "0576bc35d67fec84a9daf2083b1ca39352975cd78da847fcd55dcae598de9cf5",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/operation-ledger-entry.schema.json",
+      "outputSha256": "e76428f318f07bff370f21f52cc43e106bf2b34e1209379adf197087157785fa",
+      "source": ".coapi/schemas/operation-ledger-entry.schema.json",
+      "sourceSha256": "33e068e9c1ff13ff2e49337b4cf0bf75ea52ffbc7ec7f06ebcd4c2542d1fc52c",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/provider-certification.schema.json",
+      "outputSha256": "07836674228806fee3843d20df41adfcf3a0d79e20693fe7ad0038efb8ebbba3",
+      "source": ".coapi/schemas/provider-certification.schema.json",
+      "sourceSha256": "7f1fb77ff673c97a89a8ccc6a5d03774198d02270cb740e79c74438547c7bd28",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public-source release schema.",
+      "destination": ".coapi/schemas/public-mirror-authorization.schema.json",
+      "outputSha256": "0649f028fea0a6bb0e10c3549ac639b0aee47a5070d3a1e36e06ec480e265f1a",
+      "source": ".coapi/schemas/public-mirror-authorization.schema.json",
+      "sourceSha256": "0649f028fea0a6bb0e10c3549ac639b0aee47a5070d3a1e36e06ec480e265f1a",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/release-contract.schema.json",
+      "outputSha256": "ec9a42a4b0d8baba3761a500a64b12d41b4b4bc299af9035a2b19ca054743c68",
+      "source": ".coapi/schemas/release-contract.schema.json",
+      "sourceSha256": "5002184261e6130bb7330f5ca9d7087345c1dbd1f30f75b6c7222189892379c5",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/release-manifest.schema.json",
+      "outputSha256": "2fffc14009eb8a11dc0339d2a3734205b610d67f75c24adc06ae0f95eb7660e4",
+      "source": ".coapi/schemas/release-manifest.schema.json",
+      "sourceSha256": "5da52cc70fd97fac3fce6229d68322bde1f989914f7d46a5303591c60be344ac",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/rollback-drill.schema.json",
+      "outputSha256": "fc61daec023887a0e7af3cd29e7c706bab4df5cce0c964563733646ba7b07118",
+      "source": ".coapi/schemas/rollback-drill.schema.json",
+      "sourceSha256": "0f079c644e9cb0ff0d99e9c23c0467a14a3a5a94426813f1e8e93cdb6180f770",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/server-profile.schema.json",
+      "outputSha256": "a213f78297dbcd8347556e71ae4beddcfc60ea0231dc331447f258114f945ce4",
+      "source": ".coapi/schemas/server-profile.schema.json",
+      "sourceSha256": "10986b82596d6590c277168c0719ef709547b824e01c7132baf2aba391745d69",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored strict task contract schema.",
+      "destination": ".coapi/schemas/task-contract.schema.json",
+      "outputSha256": "5fc43c68ff2ce36bfd8947b3d30917804bca6b1991579c9caf1a2e5d8957bb41",
+      "source": ".coapi/schemas/task-contract.schema.json",
+      "sourceSha256": "93d92d8c43359f3dbfdd8f255470b801e4e3844ab615d2a30adb8bfa0a704163",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored JSON schema.",
+      "destination": ".coapi/schemas/workbench-session.schema.json",
+      "outputSha256": "243179a11a0b0db6faf76a809c05e0b87a86aa0671316987be9ec6374878ccec",
+      "source": ".coapi/schemas/workbench-session.schema.json",
+      "sourceSha256": "3500e2f5baee6a0714cb5cfa18116a895727fc00f5ec153d00b2fc64116f1347",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Static read-only GitHub-hosted workflow with pinned actions and no live authority.",
+      "destination": ".github/workflows/public-policy.yml",
+      "outputSha256": "e4d68b60c26861ee1b96b2b562275da57690723ddeb0ff64b5b75a09c4b0f4fa",
+      "source": ".github/workflows/public-policy.yml",
+      "sourceSha256": "e4d68b60c26861ee1b96b2b562275da57690723ddeb0ff64b5b75a09c4b0f4fa",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
+      "basis": "Project-owned redacted content policy.",
+      "destination": ".publicmirror/public-content-deny-patterns.json",
+      "outputSha256": "c25f12b1f2b1d18e9788f64147e41163f16c069e68cfaf7597c46713f0dd2abb",
+      "source": ".publicmirror/public-content-deny-patterns.json",
+      "sourceSha256": "c25f12b1f2b1d18e9788f64147e41163f16c069e68cfaf7597c46713f0dd2abb",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-owned public export policy.",
+      "destination": ".publicmirror/public-path-denylist.txt",
+      "outputSha256": "c99ef623995ab7af86d8bf05a33863dda8f23a7f5641be100acbb5499e28d157",
+      "source": ".publicmirror/public-path-denylist.txt",
+      "sourceSha256": "c99ef623995ab7af86d8bf05a33863dda8f23a7f5641be100acbb5499e28d157",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-owned placeholder policy containing no operational values.",
+      "destination": ".publicmirror/public-placeholders.json",
+      "outputSha256": "b0f72f7a48a94459123b8174df42ee3f421a4c22dbb9f1d5b52c15a5000461de",
+      "source": ".publicmirror/public-placeholders.json",
+      "sourceSha256": "1224a64e6044b652d8c743591026ce78e945c6371025079c0e045283221cf35f",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-owned provenance policy.",
+      "destination": ".publicmirror/public-provenance.json",
+      "outputSha256": "b55aa252271fc53207fc7aeef0db9953f74ff50153c602dcf3170f2848395690",
+      "source": ".publicmirror/public-provenance.json",
+      "sourceSha256": "b55aa252271fc53207fc7aeef0db9953f74ff50153c602dcf3170f2848395690",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-owned public export policy.",
+      "destination": ".publicmirror/public-source-allowlist.txt",
+      "outputSha256": "9aba38e66aa076d3ef180a7e90f60939be77018100fc01e9e7dc817d60840b04",
+      "source": ".publicmirror/public-source-allowlist.txt",
+      "sourceSha256": "9aba38e66aa076d3ef180a7e90f60939be77018100fc01e9e7dc817d60840b04",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored contribution policy.",
+      "destination": "CONTRIBUTING.md",
+      "outputSha256": "2c0311c2298670b1d932effe883bf40a8937770dc85c6fbf6d55b4d39000e6f2",
+      "source": "CONTRIBUTING.md",
+      "sourceSha256": "2c0311c2298670b1d932effe883bf40a8937770dc85c6fbf6d55b4d39000e6f2",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored backend architecture documentation.",
+      "destination": "Docs/ARCHITECTURE.md",
+      "outputSha256": "73972e55143e6757600b686dbfc79cdb0912a16c014dd3a58bd292f70e8de94c",
+      "source": "Docs/ARCHITECTURE.md",
+      "sourceSha256": "73972e55143e6757600b686dbfc79cdb0912a16c014dd3a58bd292f70e8de94c",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public boundary documentation.",
+      "destination": "Docs/PUBLIC_MIRROR_POLICY.md",
+      "outputSha256": "4f9231e61a42d9964c5593052e49de551a3c42f856f48d28ea485e8bb11581fc",
+      "source": "Docs/PUBLIC_MIRROR_POLICY.md",
+      "sourceSha256": "4f9231e61a42d9964c5593052e49de551a3c42f856f48d28ea485e8bb11581fc",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored rights notice; no license grant is inferred.",
+      "destination": "NOTICE.md",
+      "outputSha256": "c3fc2fdb35101a6071ab2ad5d5a77ba311cd4eb480789eeb42f56fac8158d2d2",
+      "source": "NOTICE.md",
+      "sourceSha256": "c3fc2fdb35101a6071ab2ad5d5a77ba311cd4eb480789eeb42f56fac8158d2d2",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public landing documentation.",
+      "destination": "README.md",
+      "outputSha256": "222335c4a2b6060af7f9ab8e2efc10e3105c12edde8697db05765e04521dc818",
+      "source": "README.md",
+      "sourceSha256": "2744b04b524d7f2b422590884effe2f4a9495646d6fada98ad9d0dd3eac69924",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public security policy.",
+      "destination": "SECURITY.md",
+      "outputSha256": "37d07b679893507968c52751e7f4d5d5b14f7aecd555a9eaa6c0bb3cc58e7e30",
+      "source": "SECURITY.md",
+      "sourceSha256": "37d07b679893507968c52751e7f4d5d5b14f7aecd555a9eaa6c0bb3cc58e7e30",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored control-plane refusal tests.",
+      "destination": "Tests/policy/test_stage1_control_plane.py",
+      "outputSha256": "9add137bad9945d31e2138455f804b6d2483ae8d8aa3d6b631aa0cafe2f49ba8",
+      "source": "Tests/policy/test_stage1_control_plane.py",
+      "sourceSha256": "e181beed80753f7702fdb9816a7f589fa3337b24eb3043214fd20788bcb483f6",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored single-writer lock wrapper.",
+      "destination": "Tools/COAPI/Acquire-COAPILock.ps1",
+      "outputSha256": "1fa9ac70764cd3c54d6e94dc76d7be0fa78a00633d0696d2ca2b18cc486a8bc1",
+      "source": "Tools/COAPI/Acquire-COAPILock.ps1",
+      "sourceSha256": "f097303ea5dd7db30e5fe00ca8d3606cf91b43b78e8a3f761f1c4f56cc95ed2f",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored bounded-command wrapper.",
+      "destination": "Tools/COAPI/Invoke-COAPIBounded.ps1",
+      "outputSha256": "84a11e2bbaed9526faa9d99ab415db0554b9afd03be73a3cb9f7e7bc6439ed18",
+      "source": "Tools/COAPI/Invoke-COAPIBounded.ps1",
+      "sourceSha256": "bae0b581d39a482c80bcc6577297da935f470b238642244336a2bdaa02aba313",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public export entry point.",
+      "destination": "Tools/COAPI/Public/Export-COAPIPublicMirror.ps1",
+      "outputSha256": "fba59789eb8b0d08f77a1de9a0480bdf43877dee9fff30653fcee63cdf0d79cb",
+      "source": "Tools/COAPI/Public/Export-COAPIPublicMirror.ps1",
+      "sourceSha256": "fba59789eb8b0d08f77a1de9a0480bdf43877dee9fff30653fcee63cdf0d79cb",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public policy test entry point.",
+      "destination": "Tools/COAPI/Public/Test-COAPIPublicMirror.ps1",
+      "outputSha256": "cc9c4de0960b04cd116e271364da1788243ba460bd7221f91aa31cfd04ffc192",
+      "source": "Tools/COAPI/Public/Test-COAPIPublicMirror.ps1",
+      "sourceSha256": "cc9c4de0960b04cd116e271364da1788243ba460bd7221f91aa31cfd04ffc192",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored redacted scanner and deterministic exporter.",
+      "destination": "Tools/COAPI/Public/audit_public_export.py",
+      "outputSha256": "f7e550f9e4288f6cd59a79b2ca9709c13dbedb9b95c761724674b4cd986ef8af",
+      "source": "Tools/COAPI/Public/audit_public_export.py",
+      "sourceSha256": "f7e550f9e4288f6cd59a79b2ca9709c13dbedb9b95c761724674b4cd986ef8af",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored refusal and determinism tests.",
+      "destination": "Tools/COAPI/Public/test_audit_public_export.py",
+      "outputSha256": "a1b639668090f721c4f22076e0405e9f3da9a7471d4528a5467822cdda1f5b73",
+      "source": "Tools/COAPI/Public/test_audit_public_export.py",
+      "sourceSha256": "a1b639668090f721c4f22076e0405e9f3da9a7471d4528a5467822cdda1f5b73",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored progress wrapper.",
+      "destination": "Tools/COAPI/Register-COAPIProgress.ps1",
+      "outputSha256": "dc16c5cd70bb74a353e236551aa51e0c170607145674de08570a093cde821647",
+      "source": "Tools/COAPI/Register-COAPIProgress.ps1",
+      "sourceSha256": "db2fb0411402a562c6beda4e098d824db47909df11aa38f0c0bab976dcc74643",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored task, lock, ledger, and bounded-operation implementation.",
+      "destination": "Tools/COAPI/coapi_control.py",
+      "outputSha256": "9a70112e85736c67995981584324c2f1c60d361446184748908c664028241004",
+      "source": "Tools/COAPI/coapi_control.py",
+      "sourceSha256": "588714ca38734523c98815cd7999ac1074f6ebfdb6cf3cc1a0f1d8d9efa2ee7f",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored explicit schema migration implementation.",
+      "destination": "Tools/COAPI/schema_migrations.py",
+      "outputSha256": "65ab4dba8570e9c6c87eed5eed60dfbb09567531a0be854ab87c57c84f3590a9",
+      "source": "Tools/COAPI/schema_migrations.py",
+      "sourceSha256": "4e18f33e0a427cb62be7169fab3f96eeb6f60bd45d44cae14670f7245bba5cc1",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Pinned validator dependency declarations; no vendored dependency source.",
+      "destination": "requirements-public.txt",
+      "outputSha256": "d3853f18150be7d28ecad3a2af97efad60b5067f266bb6b1901e2c3baab06616",
+      "source": "requirements-public.txt",
+      "sourceSha256": "d3853f18150be7d28ecad3a2af97efad60b5067f266bb6b1901e2c3baab06616",
+      "status": "COAPI_OWNED"
+    }
+  ],
+  "schemaVersion": 1
+}

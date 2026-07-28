@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "patterns": [
+    {
+      "category": "PASSWORD_ASSIGNMENT",
+      "regex": "\\b(?:password|passwd|pwd)\\s*[:=]\\s*[\\\"']?(?!<|\\[|\\$\\{|\\{\\{)[^\\s,\\\"';]{6,}",
+      "rotationRequired": true
+    },
+    {
+      "category": "API_TOKEN_OR_KEY",
+      "regex": "\\b(?:api[_-]?key|access[_-]?token|auth[_-]?token|client[_-]?secret)\\s*[:=]\\s*[\\\"']?(?!<|\\[|\\$\\{|\\{\\{)[A-Za-z0-9_./+=-]{12,}",
+      "rotationRequired": true
+    },
+    {
+      "category": "GITHUB_TOKEN",
+      "regex": "\\b(?:gh[oprsu]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,})\\b",
+      "rotationRequired": true
+    },
+    {
+      "category": "WEBHOOK_URL",
+      "regex": "https?://[^\\s\\\"']+/api/webhooks/[^\\s\\\"']+",
+      "rotationRequired": true
+    },
+    {
+      "category": "PRIVATE_KEY",
+      "regex": "-----BEGIN [A-Z ]*PRIVATE KEY-----",
+      "rotationRequired": true
+    },
+    {
+      "category": "SFTP_RCON_ADMIN_CREDENTIAL",
+      "regex": "\\b(?:sftp|rcon|admin)[_-]?(?:password|token|secret|key)\\s*[:=]\\s*[\\\"']?(?!<|\\[|\\$\\{|\\{\\{)[^\\s,\\\"';]{6,}",
+      "rotationRequired": true
+    },
+    {
+      "category": "SESSION_COOKIE",
+      "regex": "\\b(?:session|cookie|set-cookie)\\s*[:=]\\s*[\\\"']?(?!<|\\[|\\$\\{|\\{\\{)[A-Za-z0-9_./+=-]{12,}",
+      "rotationRequired": true
+    },
+    {
+      "category": "IP_OR_HOST_CONNECTION_RECORD",
+      "regex": "(?<![A-Za-z0-9])(?:\\d{1,3}\\.){3}\\d{1,3}(?![A-Za-z0-9])",
+      "rotationRequired": false
+    },
+    {
+      "category": "PROVIDER_PANEL_URL",
+      "regex": "https?://[^\\s/\\\"']*(?:panel|control|provider|gtx)[^\\s\\\"']*",
+      "rotationRequired": false
+    },
+    {
+      "category": "PERSONAL_HOME_PATH",
+      "regex": "(?:[A-Za-z]:[\\\\/]+Users[\\\\/]+[^\\s\\\"']+|/(?:home|Users)/[^/\\s\\\"']+)",
+      "rotationRequired": false
+    },
+    {
+      "category": "EMAIL_ADDRESS",
+      "regex": "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
+      "rotationRequired": false
+    },
+    {
+      "category": "PHONE_NUMBER",
+      "regex": "(?<!\\d)(?:\\+?1[-. ]?)?\\(?\\d{3}\\)?[-. ]\\d{3}[-. ]\\d{4}(?!\\d)",
+      "rotationRequired": false
+    },
+    {
+      "category": "USERNAME_ASSIGNMENT",
+      "regex": "\\b(?:username|user_name|login)\\s*[:=]\\s*[\\\"']?(?!<|\\[|\\$\\{|\\{\\{)[A-Za-z0-9._-]{3,}",
+      "rotationRequired": false
+    },
+    {
+      "category": "LOCAL_BACKUP_PATH",
+      "regex": "\\b(?:backup|local)[_-]?path\\s*[:=]\\s*[\\\"']?(?:[A-Za-z]:[\\\\/]|/(?:home|Users)/)[^\\s,\\\"']+",
+      "rotationRequired": false
+    }
+  ]
+}

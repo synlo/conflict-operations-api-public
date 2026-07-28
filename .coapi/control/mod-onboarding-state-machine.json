@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 2,
+  "states": [
+    "QUARANTINED",
+    "METADATA_CAPTURED",
+    "PACKAGE_IDENTIFIED",
+    "DEPENDENCIES_RESOLVED",
+    "CONFLICT_DOMAINS_CLASSIFIED",
+    "CERTIFIED",
+    "PROFILE_RENDERED",
+    "STATIC_GREEN",
+    "PAIRWISE_GREEN",
+    "LOCAL_RUNTIME_GREEN",
+    "PROMOTION_APPROVED",
+    "PROMOTED"
+  ],
+  "terminalFailureStates": [
+    "REJECTED",
+    "BLOCKED",
+    "EXPIRED"
+  ],
+  "rule": "Each transition requires exact candidate, package, graph, and input hashes. No state implies the next."
+}

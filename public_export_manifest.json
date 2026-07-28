@@ -1,0 +1,216 @@
+{
+  "exportIdentitySha256": "9a85f50c2636fc36ec486cd06a378a95ad88d700b26f605eee5267b85729b122",
+  "files": [
+    {
+      "bytes": 524,
+      "path": ".coapi/control/mod-onboarding-state-machine.json",
+      "sha256": "0c3001108d2a549331b31987d04d2b415e0e72e5d0860c5c26475e5de9b747f6"
+    },
+    {
+      "bytes": 969,
+      "path": ".coapi/control/release-state-machine.json",
+      "sha256": "f97380a09741b84bb996de4b461b16d8f45ef5f6a7d89addebb9ccebf0989365"
+    },
+    {
+      "bytes": 409,
+      "path": ".coapi/control/rollback-drill-state-machine.json",
+      "sha256": "ca1d4aadb6a0f1f3332dd7de201685d7c0b8553eb753a6529d8db99e58a386b0"
+    },
+    {
+      "bytes": 1584,
+      "path": ".coapi/examples/task-contract.example.json",
+      "sha256": "41f5c82c115d8518f5f600de17ea30736a4797a6a87f0bb0de1f6adb8cba49bc"
+    },
+    {
+      "bytes": 649,
+      "path": ".coapi/policy/external-tool-policy.json",
+      "sha256": "c2fb4a372dcf09eb72f5c9cfb25886e5ae487dd996a3645924818c9a6a810a11"
+    },
+    {
+      "bytes": 2813,
+      "path": ".coapi/schemas/approval-receipt.schema.json",
+      "sha256": "0190e0eb737f023eb130f3b6c2dc05ff66051703a0677280af3b587ec7fe5dda"
+    },
+    {
+      "bytes": 3573,
+      "path": ".coapi/schemas/mod-catalog.schema.json",
+      "sha256": "83818280fcbd333a4ae69468615e6011e9831a92d6cd71a86a170b81bd97cd65"
+    },
+    {
+      "bytes": 3344,
+      "path": ".coapi/schemas/modset-lock.schema.json",
+      "sha256": "706bfb95206d4877e5fb06eb77472a6db3cc8d1f8dbedc30e485bc97aac835bf"
+    },
+    {
+      "bytes": 2414,
+      "path": ".coapi/schemas/operation-ledger-entry.schema.json",
+      "sha256": "e76428f318f07bff370f21f52cc43e106bf2b34e1209379adf197087157785fa"
+    },
+    {
+      "bytes": 3233,
+      "path": ".coapi/schemas/provider-certification.schema.json",
+      "sha256": "07836674228806fee3843d20df41adfcf3a0d79e20693fe7ad0038efb8ebbba3"
+    },
+    {
+      "bytes": 1918,
+      "path": ".coapi/schemas/public-mirror-authorization.schema.json",
+      "sha256": "0649f028fea0a6bb0e10c3549ac639b0aee47a5070d3a1e36e06ec480e265f1a"
+    },
+    {
+      "bytes": 6186,
+      "path": ".coapi/schemas/release-contract.schema.json",
+      "sha256": "ec9a42a4b0d8baba3761a500a64b12d41b4b4bc299af9035a2b19ca054743c68"
+    },
+    {
+      "bytes": 3551,
+      "path": ".coapi/schemas/release-manifest.schema.json",
+      "sha256": "2fffc14009eb8a11dc0339d2a3734205b610d67f75c24adc06ae0f95eb7660e4"
+    },
+    {
+      "bytes": 1674,
+      "path": ".coapi/schemas/rollback-drill.schema.json",
+      "sha256": "fc61daec023887a0e7af3cd29e7c706bab4df5cce0c964563733646ba7b07118"
+    },
+    {
+      "bytes": 2667,
+      "path": ".coapi/schemas/server-profile.schema.json",
+      "sha256": "a213f78297dbcd8347556e71ae4beddcfc60ea0231dc331447f258114f945ce4"
+    },
+    {
+      "bytes": 4326,
+      "path": ".coapi/schemas/task-contract.schema.json",
+      "sha256": "5fc43c68ff2ce36bfd8947b3d30917804bca6b1991579c9caf1a2e5d8957bb41"
+    },
+    {
+      "bytes": 2619,
+      "path": ".coapi/schemas/workbench-session.schema.json",
+      "sha256": "243179a11a0b0db6faf76a809c05e0b87a86aa0671316987be9ec6374878ccec"
+    },
+    {
+      "bytes": 1129,
+      "path": ".github/workflows/public-policy.yml",
+      "sha256": "e4d68b60c26861ee1b96b2b562275da57690723ddeb0ff64b5b75a09c4b0f4fa"
+    },
+    {
+      "bytes": 2553,
+      "path": ".publicmirror/public-content-deny-patterns.json",
+      "sha256": "c25f12b1f2b1d18e9788f64147e41163f16c069e68cfaf7597c46713f0dd2abb"
+    },
+    {
+      "bytes": 673,
+      "path": ".publicmirror/public-path-denylist.txt",
+      "sha256": "c99ef623995ab7af86d8bf05a33863dda8f23a7f5641be100acbb5499e28d157"
+    },
+    {
+      "bytes": 421,
+      "path": ".publicmirror/public-placeholders.json",
+      "sha256": "b0f72f7a48a94459123b8174df42ee3f421a4c22dbb9f1d5b52c15a5000461de"
+    },
+    {
+      "bytes": 8458,
+      "path": ".publicmirror/public-provenance.json",
+      "sha256": "b55aa252271fc53207fc7aeef0db9953f74ff50153c602dcf3170f2848395690"
+    },
+    {
+      "bytes": 1594,
+      "path": ".publicmirror/public-source-allowlist.txt",
+      "sha256": "9aba38e66aa076d3ef180a7e90f60939be77018100fc01e9e7dc817d60840b04"
+    },
+    {
+      "bytes": 823,
+      "path": "CONTRIBUTING.md",
+      "sha256": "2c0311c2298670b1d932effe883bf40a8937770dc85c6fbf6d55b4d39000e6f2"
+    },
+    {
+      "bytes": 1220,
+      "path": "Docs/ARCHITECTURE.md",
+      "sha256": "73972e55143e6757600b686dbfc79cdb0912a16c014dd3a58bd292f70e8de94c"
+    },
+    {
+      "bytes": 2093,
+      "path": "Docs/PUBLIC_MIRROR_POLICY.md",
+      "sha256": "4f9231e61a42d9964c5593052e49de551a3c42f856f48d28ea485e8bb11581fc"
+    },
+    {
+      "bytes": 485,
+      "path": "NOTICE.md",
+      "sha256": "c3fc2fdb35101a6071ab2ad5d5a77ba311cd4eb480789eeb42f56fac8158d2d2"
+    },
+    {
+      "bytes": 2245,
+      "path": "README.md",
+      "sha256": "222335c4a2b6060af7f9ab8e2efc10e3105c12edde8697db05765e04521dc818"
+    },
+    {
+      "bytes": 787,
+      "path": "SECURITY.md",
+      "sha256": "37d07b679893507968c52751e7f4d5d5b14f7aecd555a9eaa6c0bb3cc58e7e30"
+    },
+    {
+      "bytes": 21971,
+      "path": "Tests/policy/test_stage1_control_plane.py",
+      "sha256": "9add137bad9945d31e2138455f804b6d2483ae8d8aa3d6b631aa0cafe2f49ba8"
+    },
+    {
+      "bytes": 1011,
+      "path": "Tools/COAPI/Acquire-COAPILock.ps1",
+      "sha256": "1fa9ac70764cd3c54d6e94dc76d7be0fa78a00633d0696d2ca2b18cc486a8bc1"
+    },
+    {
+      "bytes": 1308,
+      "path": "Tools/COAPI/Invoke-COAPIBounded.ps1",
+      "sha256": "84a11e2bbaed9526faa9d99ab415db0554b9afd03be73a3cb9f7e7bc6439ed18"
+    },
+    {
+      "bytes": 1820,
+      "path": "Tools/COAPI/Public/Export-COAPIPublicMirror.ps1",
+      "sha256": "fba59789eb8b0d08f77a1de9a0480bdf43877dee9fff30653fcee63cdf0d79cb"
+    },
+    {
+      "bytes": 1071,
+      "path": "Tools/COAPI/Public/Test-COAPIPublicMirror.ps1",
+      "sha256": "cc9c4de0960b04cd116e271364da1788243ba460bd7221f91aa31cfd04ffc192"
+    },
+    {
+      "bytes": 41849,
+      "path": "Tools/COAPI/Public/audit_public_export.py",
+      "sha256": "f7e550f9e4288f6cd59a79b2ca9709c13dbedb9b95c761724674b4cd986ef8af"
+    },
+    {
+      "bytes": 8452,
+      "path": "Tools/COAPI/Public/test_audit_public_export.py",
+      "sha256": "a1b639668090f721c4f22076e0405e9f3da9a7471d4528a5467822cdda1f5b73"
+    },
+    {
+      "bytes": 771,
+      "path": "Tools/COAPI/Register-COAPIProgress.ps1",
+      "sha256": "dc16c5cd70bb74a353e236551aa51e0c170607145674de08570a093cde821647"
+    },
+    {
+      "bytes": 53229,
+      "path": "Tools/COAPI/coapi_control.py",
+      "sha256": "9a70112e85736c67995981584324c2f1c60d361446184748908c664028241004"
+    },
+    {
+      "bytes": 5114,
+      "path": "Tools/COAPI/schema_migrations.py",
+      "sha256": "65ab4dba8570e9c6c87eed5eed60dfbb09567531a0be854ab87c57c84f3590a9"
+    },
+    {
+      "bytes": 16315,
+      "path": "public_provenance_manifest.json",
+      "sha256": "fced12f8dc62cc155323bbe23655fdfe9ae48258c658824751cfab352e9718ea"
+    },
+    {
+      "bytes": 33,
+      "path": "requirements-public.txt",
+      "sha256": "d3853f18150be7d28ecad3a2af97efad60b5067f266bb6b1901e2c3baab06616"
+    }
+  ],
+  "provenanceManifest": {
+    "entryCount": 40,
+    "path": "public_provenance_manifest.json",
+    "sha256": "fced12f8dc62cc155323bbe23655fdfe9ae48258c658824751cfab352e9718ea"
+  },
+  "schemaVersion": 1
+}

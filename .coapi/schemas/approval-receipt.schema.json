@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/approval-receipt.schema.json",
+  "title": "COAPI Single-Use Approval Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "approvalId",
+    "releaseId",
+    "createdAt",
+    "expiresAt",
+    "singleUse",
+    "nonce",
+    "bindings",
+    "proof",
+    "consumed"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "approvalId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "releaseId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "singleUse": {
+      "const": true
+    },
+    "nonce": {
+      "type": "string",
+      "minLength": 24
+    },
+    "bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manifestSha256",
+        "packageSha256",
+        "profileSha256",
+        "renderedConfigSha256",
+        "workshopGuid",
+        "requestedVersion",
+        "targetId"
+      ],
+      "properties": {
+        "manifestSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "packageSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "profileSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "renderedConfigSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "workshopGuid": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{16}$"
+        },
+        "requestedVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "targetId": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "value"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "EXTERNAL_CHALLENGE",
+            "WINDOWS_CERT_STORE",
+            "FIDO2",
+            "SEPARATE_OPERATOR_ACCOUNT"
+          ]
+        },
+        "signerFingerprint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "minLength": 16
+        }
+      }
+    },
+    "consumed": {
+      "type": "boolean"
+    },
+    "consumedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "consumptionLedgerEntrySha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

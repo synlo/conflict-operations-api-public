@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/release-contract.schema.json",
+  "title": "COAPI Release Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "releaseId",
+    "createdAt",
+    "expiresAt",
+    "repository",
+    "workshop",
+    "source",
+    "modset",
+    "rollback",
+    "target",
+    "permissions",
+    "budgets",
+    "humanApproval",
+    "serverProfile",
+    "policyHashes",
+    "operationLedger"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "releaseId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branch",
+        "commit"
+      ],
+      "properties": {
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{40}$"
+        }
+      }
+    },
+    "workshop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "guid",
+        "currentVersion",
+        "requestedVersion",
+        "initialPublication"
+      ],
+      "properties": {
+        "guid": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{16}$"
+        },
+        "currentVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requestedVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initialPublication": {
+          "const": false
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "treeSha256",
+        "gprojSha256",
+        "clean"
+      ],
+      "properties": {
+        "treeSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "gprojSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "clean": {
+          "const": true
+        }
+      }
+    },
+    "modset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "directSha256",
+        "effectiveSha256"
+      ],
+      "properties": {
+        "directSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "effectiveSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "scriptGraphSha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "package": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "rollback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "releaseId",
+        "manifestSha256",
+        "drillReceiptSha256",
+        "drillMaxAgeDays"
+      ],
+      "properties": {
+        "releaseId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifestSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "drillReceiptSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "drillMaxAgeDays": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 90
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileId"
+      ],
+      "properties": {
+        "profileId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "boolean"
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "humanApproval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "external",
+        "singleUse",
+        "maxAgeMinutes"
+      ],
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "external": {
+          "const": true
+        },
+        "singleUse": {
+          "const": true
+        },
+        "maxAgeMinutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 60
+        }
+      }
+    },
+    "serverProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileId",
+        "profileSha256",
+        "renderedConfigSha256"
+      ],
+      "properties": {
+        "profileId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profileSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "renderedConfigSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "policyHashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceAllowlistSha256",
+        "packageDenylistSha256",
+        "externalToolsLockSha256"
+      ],
+      "properties": {
+        "sourceAllowlistSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "packageDenylistSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "externalToolsLockSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "operationLedger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ledgerId",
+        "genesisSha256"
+      ],
+      "properties": {
+        "ledgerId": {
+          "type": "string",
+          "minLength": 8
+        },
+        "genesisSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

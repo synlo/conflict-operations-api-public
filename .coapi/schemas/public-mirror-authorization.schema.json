@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/public-mirror-authorization.schema.json",
+  "title": "COAPI Public Mirror Authorization",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "authorizationId",
+    "createdAt",
+    "expiresAt",
+    "repository",
+    "export",
+    "permissions",
+    "singleUse"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "authorizationId": { "type": "string", "minLength": 8 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["privateBranch", "privateCommit", "publicNameWithOwner", "defaultBranch"],
+      "properties": {
+        "privateBranch": { "type": "string", "minLength": 1 },
+        "privateCommit": { "type": "string", "pattern": "^[0-9a-fA-F]{40}$" },
+        "publicNameWithOwner": { "const": "synlo/conflict-operations-api-public" },
+        "defaultBranch": { "const": "main" }
+      }
+    },
+    "export": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identitySha256", "manifestSha256", "provenanceManifestSha256", "findingCount"],
+      "properties": {
+        "identitySha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "manifestSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "provenanceManifestSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "findingCount": { "const": 0 }
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["create", "push"],
+      "properties": {
+        "create": { "type": "boolean" },
+        "push": { "type": "boolean" }
+      }
+    },
+    "singleUse": { "const": true }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "default": "DENY",
+  "releaseModeExternalTools": "DISABLED",
+  "tools": [
+    {
+      "name": "enfusion-mcp",
+      "mode": "READ_ONLY_RESEARCH",
+      "enabled": false,
+      "repository": null,
+      "commit": null,
+      "allowedCapabilities": [
+        "api-search",
+        "wiki-read",
+        "game-read",
+        "prefab-inspect",
+        "project-read"
+      ],
+      "deniedCapabilities": [
+        "project-write",
+        "workbench-mutation",
+        "arbitrary-action",
+        "build",
+        "pack",
+        "publish",
+        "launch",
+        "credentials",
+        "release-staging"
+      ]
+    }
+  ]
+}

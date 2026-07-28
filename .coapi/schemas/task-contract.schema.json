@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/task-contract.schema.json",
+  "title": "COAPI Task Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "taskId",
+    "mode",
+    "objective",
+    "createdAt",
+    "expiresAt",
+    "repository",
+    "permissions",
+    "budgets",
+    "consumed",
+    "state",
+    "allowedPaths",
+    "requiredOutputs",
+    "terminalStatuses",
+    "releaseAuthorization",
+    "publicMirrorAuthorization"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 3
+    },
+    "taskId": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "mode": {
+      "enum": [
+        "RECOVERY",
+        "DEVELOPMENT",
+        "RELEASE"
+      ]
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "root",
+        "branch",
+        "head"
+      ],
+      "properties": {
+        "root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "head": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{40}$"
+        },
+        "base": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repositoryWrite",
+        "publicMirrorExport",
+        "privateGitPush",
+        "draftPullRequest",
+        "publicRepositoryCreate",
+        "publicRepositoryPush",
+        "workbench",
+        "gameClient",
+        "serverBoot",
+        "packageBuild",
+        "workshopPublish",
+        "credentialRead",
+        "liveDeploy",
+        "serverRestart",
+        "providerEdit",
+        "pullRequestMerge",
+        "forcePush",
+        "subagents",
+        "recursiveCodex"
+      ],
+      "properties": {
+        "repositoryWrite": { "type": "boolean" },
+        "publicMirrorExport": { "type": "boolean" },
+        "privateGitPush": { "type": "boolean" },
+        "draftPullRequest": { "type": "boolean" },
+        "publicRepositoryCreate": { "type": "boolean" },
+        "publicRepositoryPush": { "type": "boolean" },
+        "workbench": { "type": "boolean" },
+        "gameClient": { "type": "boolean" },
+        "serverBoot": { "type": "boolean" },
+        "packageBuild": { "type": "boolean" },
+        "workshopPublish": { "type": "boolean" },
+        "credentialRead": { "type": "boolean" },
+        "liveDeploy": { "type": "boolean" },
+        "serverRestart": { "type": "boolean" },
+        "providerEdit": { "type": "boolean" },
+        "pullRequestMerge": { "type": "boolean" },
+        "forcePush": { "type": "boolean" },
+        "subagents": { "type": "boolean" },
+        "recursiveCodex": { "type": "boolean" }
+      }
+    },
+    "budgets": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "consumed": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowedPaths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "relevantInputHashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "requiredOutputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "terminalStatuses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "releaseAuthorization": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "publicMirrorAuthorization": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

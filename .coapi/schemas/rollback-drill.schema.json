@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conflict-operations.local/schemas/rollback-drill.schema.json",
+  "title": "COAPI Rollback Drill Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "drillId",
+    "startedAt",
+    "endedAt",
+    "isolated",
+    "currentReleaseId",
+    "rollbackReleaseId",
+    "targetClass",
+    "currentManifestSha256",
+    "rollbackManifestSha256",
+    "steps",
+    "restoredOriginalState",
+    "result"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "drillId": {
+      "type": "string",
+      "minLength": 8
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "isolated": {
+      "const": true
+    },
+    "currentReleaseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rollbackReleaseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "targetClass": {
+      "type": "string",
+      "minLength": 1
+    },
+    "currentManifestSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "rollbackManifestSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "restoredOriginalState": {
+      "const": true
+    },
+    "cleanClientProof": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "result": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "PARTIAL_BLOCKED"
+      ]
+    }
+  }
+}

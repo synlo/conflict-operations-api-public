@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 3,
+  "taskId": "EXAMPLE-DEVELOPMENT-TASK",
+  "mode": "DEVELOPMENT",
+  "objective": "Demonstrate a local fail-closed development contract with no runtime or release authority.",
+  "createdAt": "2026-01-01T00:00:00Z",
+  "expiresAt": "2099-01-01T00:00:00Z",
+  "repository": {
+    "root": ".",
+    "branch": "example-development-branch",
+    "head": "0000000000000000000000000000000000000000",
+    "base": null
+  },
+  "permissions": {
+    "repositoryWrite": true,
+    "publicMirrorExport": true,
+    "privateGitPush": false,
+    "draftPullRequest": false,
+    "publicRepositoryCreate": false,
+    "publicRepositoryPush": false,
+    "workbench": false,
+    "gameClient": false,
+    "serverBoot": false,
+    "packageBuild": false,
+    "workshopPublish": false,
+    "credentialRead": false,
+    "liveDeploy": false,
+    "serverRestart": false,
+    "providerEdit": false,
+    "pullRequestMerge": false,
+    "forcePush": false,
+    "subagents": false,
+    "recursiveCodex": false
+  },
+  "budgets": {
+    "staticValidations": 2,
+    "policyValidations": 2,
+    "repositoryWrites": 1,
+    "publicMirrorExports": 1,
+    "identicalCommandAttempts": 1
+  },
+  "consumed": {
+    "staticValidations": 0,
+    "policyValidations": 0,
+    "repositoryWrites": 0,
+    "publicMirrorExports": 0,
+    "identicalCommandAttempts": 0
+  },
+  "state": "EXAMPLE_ACTIVE",
+  "allowedPaths": ["Tools/COAPI/"],
+  "relevantInputHashes": {},
+  "requiredOutputs": [],
+  "terminalStatuses": ["EXAMPLE_COMPLETE", "EXAMPLE_BLOCKED"],
+  "releaseAuthorization": null,
+  "publicMirrorAuthorization": null
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "states": [
+    "DRILL_PREPARED",
+    "CURRENT_STATE_APPLIED",
+    "CURRENT_STATE_VERIFIED",
+    "ROLLBACK_APPLIED",
+    "ROLLBACK_VERIFIED",
+    "ORIGINAL_STATE_RESTORED",
+    "DRILL_PASS"
+  ],
+  "terminalFailureStates": [
+    "DRILL_FAIL",
+    "DRILL_PARTIAL_BLOCKED"
+  ],
+  "rule": "A production release may use a rollback only when a current compatible drill receipt is PASS."
+}
