@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "schemaVersion": 1,
+  "identities": {
+    "pakSha256": "e68269e63c5a924006fffb81cf255d16e77f10068c622ba5ad917f5e64cb6da7",
+    "providerCandidateSha256": "7dba29968614ee0d07e521a8d498365f14a2b8f3157dcdbc0cfcbe6a600d4a67",
+    "procedure": "M998 start/parking release/forward-handbrake/reverse-handbrake"
+  },
+  "aggregateMetrics": [],
+  "observations": [
+    {
+      "scenario": "A",
+      "metricName": "total-run-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "value": 320.8612282000249,
+      "runIdentity": "wb-probe-hotfix216-input-387"
+    },
+    {
+      "scenario": "A",
+      "metricName": "preflight-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "value": 21.617032700043637,
+      "runIdentity": "wb-probe-hotfix216-input-387"
+    },
+    {
+      "scenario": "A",
+      "metricName": "cleanup-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "value": 40.28031830000691,
+      "runIdentity": "wb-probe-hotfix216-input-387"
+    },
+    {
+      "scenario": "A",
+      "metricName": "actuator-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "value": 15.203,
+      "runIdentity": "wb-probe-hotfix216-input-387"
+    },
+    {
+      "scenario": "A",
+      "metricName": "driving-command-round-trips-after-viewport-preparation",
+      "unit": "calls",
+      "phase": "BASELINE",
+      "value": 4.0,
+      "runIdentity": "wb-probe-hotfix216-input-387"
+    },
+    {
+      "scenario": "A",
+      "metricName": "recording-bytes",
+      "unit": "bytes",
+      "phase": "BASELINE",
+      "value": 84081266.0,
+      "runIdentity": "wb-probe-hotfix216-input-387"
+    },
+    {
+      "scenario": "A",
+      "metricName": "total-run-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "value": 192.33098199998494,
+      "runIdentity": "wb-probe-hotfix216-diagnose-395"
+    },
+    {
+      "scenario": "A",
+      "metricName": "preflight-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "value": 25.555723799974658,
+      "runIdentity": "wb-probe-hotfix216-diagnose-395"
+    },
+    {
+      "scenario": "A",
+      "metricName": "cleanup-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "value": 34.89666359999683,
+      "runIdentity": "wb-probe-hotfix216-diagnose-395"
+    },
+    {
+      "scenario": "A",
+      "metricName": "actuator-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "value": 15.203,
+      "runIdentity": "wb-probe-hotfix216-diagnose-395"
+    },
+    {
+      "scenario": "A",
+      "metricName": "driving-command-round-trips-after-viewport-preparation",
+      "unit": "calls",
+      "phase": "CURRENT",
+      "value": 1.0,
+      "runIdentity": "wb-probe-hotfix216-diagnose-395"
+    },
+    {
+      "scenario": "A",
+      "metricName": "recording-bytes",
+      "unit": "bytes",
+      "phase": "CURRENT",
+      "value": 48275381.0,
+      "runIdentity": "wb-probe-hotfix216-diagnose-395"
+    }
+  ],
+  "distributions": [
+    {
+      "scenario": "A",
+      "metricName": "actuator-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "sampleCount": 1,
+      "p50": 15.203,
+      "p95": 15.203,
+      "minimum": 15.203,
+      "maximum": 15.203
+    },
+    {
+      "scenario": "A",
+      "metricName": "actuator-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "sampleCount": 1,
+      "p50": 15.203,
+      "p95": 15.203,
+      "minimum": 15.203,
+      "maximum": 15.203
+    },
+    {
+      "scenario": "A",
+      "metricName": "cleanup-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "sampleCount": 1,
+      "p50": 40.280318,
+      "p95": 40.280318,
+      "minimum": 40.280318,
+      "maximum": 40.280318
+    },
+    {
+      "scenario": "A",
+      "metricName": "cleanup-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "sampleCount": 1,
+      "p50": 34.896664,
+      "p95": 34.896664,
+      "minimum": 34.896664,
+      "maximum": 34.896664
+    },
+    {
+      "scenario": "A",
+      "metricName": "driving-command-round-trips-after-viewport-preparation",
+      "unit": "calls",
+      "phase": "BASELINE",
+      "sampleCount": 1,
+      "p50": 4.0,
+      "p95": 4.0,
+      "minimum": 4.0,
+      "maximum": 4.0
+    },
+    {
+      "scenario": "A",
+      "metricName": "driving-command-round-trips-after-viewport-preparation",
+      "unit": "calls",
+      "phase": "CURRENT",
+      "sampleCount": 1,
+      "p50": 1.0,
+      "p95": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    {
+      "scenario": "A",
+      "metricName": "preflight-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "sampleCount": 1,
+      "p50": 21.617033,
+      "p95": 21.617033,
+      "minimum": 21.617033,
+      "maximum": 21.617033
+    },
+    {
+      "scenario": "A",
+      "metricName": "preflight-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "sampleCount": 1,
+      "p50": 25.555724,
+      "p95": 25.555724,
+      "minimum": 25.555724,
+      "maximum": 25.555724
+    },
+    {
+      "scenario": "A",
+      "metricName": "recording-bytes",
+      "unit": "bytes",
+      "phase": "BASELINE",
+      "sampleCount": 1,
+      "p50": 84081266.0,
+      "p95": 84081266.0,
+      "minimum": 84081266.0,
+      "maximum": 84081266.0
+    },
+    {
+      "scenario": "A",
+      "metricName": "recording-bytes",
+      "unit": "bytes",
+      "phase": "CURRENT",
+      "sampleCount": 1,
+      "p50": 48275381.0,
+      "p95": 48275381.0,
+      "minimum": 48275381.0,
+      "maximum": 48275381.0
+    },
+    {
+      "scenario": "A",
+      "metricName": "total-run-seconds",
+      "unit": "seconds",
+      "phase": "BASELINE",
+      "sampleCount": 1,
+      "p50": 320.861228,
+      "p95": 320.861228,
+      "minimum": 320.861228,
+      "maximum": 320.861228
+    },
+    {
+      "scenario": "A",
+      "metricName": "total-run-seconds",
+      "unit": "seconds",
+      "phase": "CURRENT",
+      "sampleCount": 1,
+      "p50": 192.330982,
+      "p95": 192.330982,
+      "minimum": 192.330982,
+      "maximum": 192.330982
+    }
+  ],
+  "reductions": [
+    {
+      "scenario": "A",
+      "metricName": "actuator-seconds",
+      "unit": "seconds",
+      "baselineP50": 15.203,
+      "currentP50": 15.203,
+      "reductionPercent": 0.0
+    },
+    {
+      "scenario": "A",
+      "metricName": "cleanup-seconds",
+      "unit": "seconds",
+      "baselineP50": 40.280318,
+      "currentP50": 34.896664,
+      "reductionPercent": 13.365472
+    },
+    {
+      "scenario": "A",
+      "metricName": "driving-command-round-trips-after-viewport-preparation",
+      "unit": "calls",
+      "baselineP50": 4.0,
+      "currentP50": 1.0,
+      "reductionPercent": 75.0
+    },
+    {
+      "scenario": "A",
+      "metricName": "preflight-seconds",
+      "unit": "seconds",
+      "baselineP50": 21.617033,
+      "currentP50": 25.555724,
+      "reductionPercent": -18.220313
+    },
+    {
+      "scenario": "A",
+      "metricName": "recording-bytes",
+      "unit": "bytes",
+      "baselineP50": 84081266.0,
+      "currentP50": 48275381.0,
+      "reductionPercent": 42.584855
+    },
+    {
+      "scenario": "A",
+      "metricName": "total-run-seconds",
+      "unit": "seconds",
+      "baselineP50": 320.861228,
+      "currentP50": 192.330982,
+      "reductionPercent": 40.057893
+    }
+  ],
+  "coveredScenarios": [
+    "A"
+  ],
+  "unknowns": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "Independent end-to-end model/tool call count",
+    "J",
+    "Repeated-run distribution",
+    "Separate state-detection vs wrapper latency"
+  ],
+  "measurementFingerprint": "999e9b52e7557067641958865332506aa85e82b64a41bc8b7562ae8b68ec5883",
+  "runtimeExecutedByBenchmark": false,
+  "fabricatedEngineResults": false,
+  "interpretation": "One comparable successful sample per path. Four driving submissions became one after viewport preparation. Qualification failures excluded from this paired run comparison but preserved separately; no general latency guarantee."
+}
