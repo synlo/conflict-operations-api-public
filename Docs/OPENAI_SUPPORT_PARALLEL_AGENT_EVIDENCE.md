@@ -1,53 +1,70 @@
-# OpenAI Support Evidence: Parallel Agent Usage Review
+# OpenAI Support: Codex Parallel-Agent Usage Review
 
-This document is a public-safe summary supporting a request for OpenAI to review unusually high Codex / Parallel Agent usage on the Conflict Operations project.
+This page is an explanatory support submission, not an original Codex session transcript or an OpenAI usage ledger. The original project benchmark linked below is published separately, without changes to its contents.
 
-The full working repository remains private because it contains operational reports, server configuration, provider details, deployment state, logs, and other material that is intentionally excluded from the public mirror. This public repository is the sanitized mirror used to demonstrate the project and its automation framework without exposing that private material.
+## Original evidence available without private-repository access
 
-## What changed
+[Open the unmodified benchmark407.json at its public publication commit](https://github.com/synlo/conflict-operations-api-public/blob/e97f15b85e0eab9a0b014c248e88d11d9748e204/Docs/support-evidence/2026-09-11/benchmark407.json)
 
-During earlier development, multiple concurrent agents were used for investigation and validation. In practice, that workflow repeatedly reloaded overlapping project context, duplicated investigations, produced separate evidence trails, and required reconciliation before changes could be accepted.
+[Raw JSON at the same pinned commit](https://raw.githubusercontent.com/synlo/conflict-operations-api-public/e97f15b85e0eab9a0b014c248e88d11d9748e204/Docs/support-evidence/2026-09-11/benchmark407.json)
 
-The project later moved to a single-agent workflow with reusable diagnostics, evidence reuse, bounded procedures, automatic cleanup, and automatic evidence sealing. The private canonical status for the 2.1.6 release records:
+### Provenance and copy-integrity verification
 
-- `singleAgent: true`
-- `parallelAgents: false`
-- `automaticStopAndSeal: true`
-- diagnostic CLI: `diagnose plan/run/ready/explain/resource`
-- driving command round trips after viewport preparation: `4 -> 1`
-- package round trip: `PASS_426_EXACT_PAYLOADS`
-- PC compile: `PASS`
-- HEADLESS compile: `PASS`
+- Original repository: `synlo/conflict-operations-api` (private).
+- Original path: `Reports/2_1_6_hotfix/benchmark407.json`.
+- Original source commit used for this export: `3bd4f916a245d858f82ea6f88f91067eca7db777`.
+- Original Git blob SHA: `ad8e4e2efe27da79c564c14eb34b8a209d0630b9`.
+- Public copy commit: `e97f15b85e0eab9a0b014c248e88d11d9748e204`.
+- Public copy Git blob SHA, verified by fetching it after publication: `ad8e4e2efe27da79c564c14eb34b8a209d0630b9`.
+- Export treatment: no reformatting, redaction, omitted fields, or changed measurements. The file's limitations and unknowns are retained.
 
-The canonical private status file used for this summary has blob SHA:
+The matching Git blob identities verify that the public copy matches the original stored file. They do not independently authenticate the underlying execution, certify a commit timestamp, or prove any OpenAI billing or usage-accounting error. This is an original project-generated benchmark report, not the complete raw engine logs or model telemetry.
 
-`d430697e1a1d63abb7889b7cd9cf1b111ac54a86`
+## What the original benchmark records
 
-## Measured workflow improvement
+The report compares one successful baseline vehicle procedure with one successful integrated-diagnostics procedure.
 
-A controlled M998 Workbench comparison measured one successful baseline run against one successful integrated-diagnostics run:
-
-| Metric | Baseline | Single-agent framework |
+| Metric | Baseline procedure | Integrated procedure |
 | --- | ---: | ---: |
 | Total run time | 320.861 s | 192.331 s |
-| Driving command round trips | 4 | 1 |
-| Recording size | 84,081,266 bytes | 48,275,381 bytes |
+| Driving command submissions after viewport preparation | 4 | 1 |
+| Recording bytes | 84,081,266 | 48,275,381 |
 | Cleanup time | 40.280 s | 34.897 s |
 | Preflight time | 21.617 s | 25.556 s |
 
-This is one paired sample, not a universal performance claim. It does show that after consolidating work into a reusable single-agent framework, the same class of validation required fewer command submissions and substantially less total execution time in that comparison.
+Run identifiers in the original report are `wb-probe-hotfix216-input-387` and `wb-probe-hotfix216-diagnose-395`. Package and provider identities are also retained in the JSON.
 
-The canonical private benchmark file used for these values has blob SHA:
+Important limitations:
 
-`ad8e4e2efe27da79c564c14eb34b8a209d0630b9`
+- This is not a controlled parallel-agent-versus-single-agent experiment. The workflow and automation changed as well.
+- There is one successful sample per path; unsuccessful qualification attempts are excluded from this paired comparison.
+- The round-trip metric counts driving-command submissions after viewport preparation, not every model or tool call.
+- The report has no token totals, credits consumed, account allowance history, or OpenAI metering records.
+- Although the original JSON contains percentile fields, one sample per path does not establish a meaningful latency distribution.
 
-## Why this matters for the support request
+Accordingly, the benchmark supports a narrow workflow-efficiency observation. It must not be presented as proof of a 40% credit saving, a 75% reduction in total model calls, or duplicate billing.
 
-The support request is not claiming that GitHub can prove OpenAI billing or exact credit consumption. Only OpenAI can verify account-level usage records. This repository instead provides independent project evidence showing:
+## Recorded single-agent workflow
 
-1. the project is real and substantial;
-2. parallel work was replaced by a deliberately single-agent architecture;
-3. the replacement workflow introduced reusable infrastructure rather than repeated one-off investigations; and
-4. the resulting workflow has concrete measured reductions in repeated command submissions and execution time for at least one comparable validation path.
+A separate private project status record, `Reports/2_1_6_hotfix/status.json`, was previously retrieved with Git blob SHA `d430697e1a1d63abb7889b7cd9cf1b111ac54a86`. The following are selected reported fields, not a complete unmodified public copy of that file:
 
-The user is asking OpenAI to review the corresponding account-side Parallel Agent usage, identify duplicated or disproportionate consumption, and consider an appropriate usage adjustment if the internal logs confirm it.
+- `workflow.singleAgent: true`
+- `parallelAgents: false`
+- `workflow.automaticStopAndSeal: true`
+- `workflow.diagnosticCLI: diagnose plan/run/ready/explain/resource`
+
+The complete operational status file is not being published. These fields document the recorded workflow decision; they are not an independently verified count of all agents that actually ran.
+
+## User-reported problem for OpenAI to investigate
+
+The user reports that concurrent agents consumed a disproportionately large part of their 20x Codex allowance while repeatedly revisiting tests, investigating overlapping issues, and reconciling separate work. They report improved practical progress after moving to one agent and reusable procedures, and state that they will no longer use parallel agents.
+
+Those descriptions are the user's account of their experience, not conclusions established by the benchmark. The initial support summary described some of them too categorically; this revision separates the account from what the published artifact actually shows. GitHub preserves the earlier revision in the page's history.
+
+## Requested account-side investigation
+
+Please review the corresponding recent Codex sessions and available parent/subagent usage records, including repeated work, retries, and accounting. The user requests restoration of affected usage, a reset if available under an applicable exception, or another permitted remedy if a fault is confirmed. No entitlement or outcome is asserted here.
+
+To correlate this material with account-side records, obtain the user's account email through the private support channel, the affected session identifiers or links, client/model information, usage-dashboard screenshots, and dates/times with time zone. Do not publish account credentials, tokens, player identifiers, private server details, or unreviewed session logs in this public repository.
+
+The main project repository and its history remain private. This public evidence page and the original benchmark are deliberately limited support material, not a public replication of the full project.
