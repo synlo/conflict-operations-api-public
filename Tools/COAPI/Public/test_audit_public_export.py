@@ -197,6 +197,43 @@ class PublicExportRefusalTests(unittest.TestCase):
             self.assertEqual(first["exportIdentitySha256"], second["exportIdentitySha256"])
             self.assertEqual(first["manifestSha256"], second["manifestSha256"])
 
+    def tracked_export_fixture(self, raw: str) -> Path:
+        root = Path(raw) / "source"
+        root.mkdir()
+        policies = self.write_fixture(root)
+        destination = Path(raw) / "checkout"
+        audit.export_public_mirror(root, destination, **policies)
+        audit.git_bytes(destination, "init", "-q")
+        audit.git_bytes(destination, "-c", "core.autocrlf=false", "add", "--all")
+        return destination
+
+    def test_index_verification_excludes_checkout_metadata(self):
+        with tempfile.TemporaryDirectory() as raw:
+            destination = self.tracked_export_fixture(raw)
+            self.assertEqual("FAIL", audit.verify_manifest(destination)["status"])
+            result = audit.verify_git_index(destination)
+            self.assertEqual("PASS", result["status"])
+            self.assertEqual("tracked-git-index", result["scope"])
+            self.assertEqual(3, result["fileCount"])
+
+    def test_index_verification_rejects_unmanifested_tracked_file(self):
+        with tempfile.TemporaryDirectory() as raw:
+            destination = self.tracked_export_fixture(raw)
+            (destination / "extra.md").write_text("unmanifested public content\n", encoding="utf-8")
+            audit.git_bytes(destination, "-c", "core.autocrlf=false", "add", "extra.md")
+            result = audit.verify_git_index(destination)
+            self.assertEqual("FAIL", result["status"])
+            self.assertIn("MANIFEST_UNEXPECTED_FILE", {row["category"] for row in result["errors"]})
+
+    def test_index_verification_rejects_changed_tracked_bytes(self):
+        with tempfile.TemporaryDirectory() as raw:
+            destination = self.tracked_export_fixture(raw)
+            (destination / "README.md").write_text("changed after manifest\n", encoding="utf-8")
+            audit.git_bytes(destination, "-c", "core.autocrlf=false", "add", "README.md")
+            result = audit.verify_git_index(destination)
+            self.assertEqual("FAIL", result["status"])
+            self.assertIn("MANIFEST_HASH_MISMATCH", {row["category"] for row in result["errors"]})
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -32,4 +32,4 @@ jobs:
         run: python Tools/COAPI/Public/audit_public_export.py staged --repository . --patterns .publicmirror/public-content-deny-patterns.json
       - name: Verify deterministic manifest
         shell: pwsh
-        run: python Tools/COAPI/Public/audit_public_export.py verify --root .
+        run: python Tools/COAPI/Public/audit_public_export.py verify-index --repository .

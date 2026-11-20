@@ -5,7 +5,7 @@
       "destination": ".coapi/control/mod-onboarding-state-machine.json",
       "outputSha256": "0c3001108d2a549331b31987d04d2b415e0e72e5d0860c5c26475e5de9b747f6",
       "source": ".coapi/control/mod-onboarding-state-machine.json",
-      "sourceSha256": "de1a5a44b69e613e3b58f1dee2f51c1a1db1281b0a9316305ee132b51a908a78",
+      "sourceSha256": "0c3001108d2a549331b31987d04d2b415e0e72e5d0860c5c26475e5de9b747f6",
       "status": "COAPI_OWNED"
     },
     {
@@ -13,7 +13,7 @@
       "destination": ".coapi/control/release-state-machine.json",
       "outputSha256": "f97380a09741b84bb996de4b461b16d8f45ef5f6a7d89addebb9ccebf0989365",
       "source": ".coapi/control/release-state-machine.json",
-      "sourceSha256": "17ff3a42bd9babcbe6a1072612c4075f99cd2f2c16fbc613db6cc77e083b424f",
+      "sourceSha256": "f97380a09741b84bb996de4b461b16d8f45ef5f6a7d89addebb9ccebf0989365",
       "status": "COAPI_OWNED"
     },
     {
@@ -21,7 +21,7 @@
       "destination": ".coapi/control/rollback-drill-state-machine.json",
       "outputSha256": "ca1d4aadb6a0f1f3332dd7de201685d7c0b8553eb753a6529d8db99e58a386b0",
       "source": ".coapi/control/rollback-drill-state-machine.json",
-      "sourceSha256": "d930cf17724868ed6188d8932318e6ab6d40d122d1a289ba57fa12614b2240c4",
+      "sourceSha256": "ca1d4aadb6a0f1f3332dd7de201685d7c0b8553eb753a6529d8db99e58a386b0",
       "status": "COAPI_OWNED"
     },
     {
@@ -37,7 +37,7 @@
       "destination": ".coapi/policy/external-tool-policy.json",
       "outputSha256": "c2fb4a372dcf09eb72f5c9cfb25886e5ae487dd996a3645924818c9a6a810a11",
       "source": ".coapi/policy/external-tool-policy.json",
-      "sourceSha256": "91861c4cdc9ee7ef97cf8d76486cae964435cab9516d17cbfe9358877ae6dccc",
+      "sourceSha256": "c2fb4a372dcf09eb72f5c9cfb25886e5ae487dd996a3645924818c9a6a810a11",
       "status": "COAPI_OWNED"
     },
     {
@@ -45,7 +45,7 @@
       "destination": ".coapi/schemas/approval-receipt.schema.json",
       "outputSha256": "0190e0eb737f023eb130f3b6c2dc05ff66051703a0677280af3b587ec7fe5dda",
       "source": ".coapi/schemas/approval-receipt.schema.json",
-      "sourceSha256": "a7660beeb0e509f1cb17b0985fd6701a525e895d25d610226df5a2f76d6622c5",
+      "sourceSha256": "0190e0eb737f023eb130f3b6c2dc05ff66051703a0677280af3b587ec7fe5dda",
       "status": "COAPI_OWNED"
     },
     {
@@ -53,7 +53,7 @@
       "destination": ".coapi/schemas/mod-catalog.schema.json",
       "outputSha256": "83818280fcbd333a4ae69468615e6011e9831a92d6cd71a86a170b81bd97cd65",
       "source": ".coapi/schemas/mod-catalog.schema.json",
-      "sourceSha256": "88c49f7dd3a9cbac1bed804c1a894c3839196e55cef3e92ed587da06955aa9db",
+      "sourceSha256": "83818280fcbd333a4ae69468615e6011e9831a92d6cd71a86a170b81bd97cd65",
       "status": "COAPI_OWNED"
     },
     {
@@ -61,7 +61,7 @@
       "destination": ".coapi/schemas/modset-lock.schema.json",
       "outputSha256": "706bfb95206d4877e5fb06eb77472a6db3cc8d1f8dbedc30e485bc97aac835bf",
       "source": ".coapi/schemas/modset-lock.schema.json",
-      "sourceSha256": "0576bc35d67fec84a9daf2083b1ca39352975cd78da847fcd55dcae598de9cf5",
+      "sourceSha256": "706bfb95206d4877e5fb06eb77472a6db3cc8d1f8dbedc30e485bc97aac835bf",
       "status": "COAPI_OWNED"
     },
     {
@@ -69,7 +69,7 @@
       "destination": ".coapi/schemas/operation-ledger-entry.schema.json",
       "outputSha256": "e76428f318f07bff370f21f52cc43e106bf2b34e1209379adf197087157785fa",
       "source": ".coapi/schemas/operation-ledger-entry.schema.json",
-      "sourceSha256": "33e068e9c1ff13ff2e49337b4cf0bf75ea52ffbc7ec7f06ebcd4c2542d1fc52c",
+      "sourceSha256": "e76428f318f07bff370f21f52cc43e106bf2b34e1209379adf197087157785fa",
       "status": "COAPI_OWNED"
     },
     {
@@ -77,7 +77,7 @@
       "destination": ".coapi/schemas/provider-certification.schema.json",
       "outputSha256": "07836674228806fee3843d20df41adfcf3a0d79e20693fe7ad0038efb8ebbba3",
       "source": ".coapi/schemas/provider-certification.schema.json",
-      "sourceSha256": "7f1fb77ff673c97a89a8ccc6a5d03774198d02270cb740e79c74438547c7bd28",
+      "sourceSha256": "07836674228806fee3843d20df41adfcf3a0d79e20693fe7ad0038efb8ebbba3",
       "status": "COAPI_OWNED"
     },
     {
@@ -93,7 +93,7 @@
       "destination": ".coapi/schemas/release-contract.schema.json",
       "outputSha256": "ec9a42a4b0d8baba3761a500a64b12d41b4b4bc299af9035a2b19ca054743c68",
       "source": ".coapi/schemas/release-contract.schema.json",
-      "sourceSha256": "5002184261e6130bb7330f5ca9d7087345c1dbd1f30f75b6c7222189892379c5",
+      "sourceSha256": "ec9a42a4b0d8baba3761a500a64b12d41b4b4bc299af9035a2b19ca054743c68",
       "status": "COAPI_OWNED"
     },
     {
@@ -101,7 +101,7 @@
       "destination": ".coapi/schemas/release-manifest.schema.json",
       "outputSha256": "2fffc14009eb8a11dc0339d2a3734205b610d67f75c24adc06ae0f95eb7660e4",
       "source": ".coapi/schemas/release-manifest.schema.json",
-      "sourceSha256": "5da52cc70fd97fac3fce6229d68322bde1f989914f7d46a5303591c60be344ac",
+      "sourceSha256": "2fffc14009eb8a11dc0339d2a3734205b610d67f75c24adc06ae0f95eb7660e4",
       "status": "COAPI_OWNED"
     },
     {
@@ -109,7 +109,7 @@
       "destination": ".coapi/schemas/rollback-drill.schema.json",
       "outputSha256": "fc61daec023887a0e7af3cd29e7c706bab4df5cce0c964563733646ba7b07118",
       "source": ".coapi/schemas/rollback-drill.schema.json",
-      "sourceSha256": "0f079c644e9cb0ff0d99e9c23c0467a14a3a5a94426813f1e8e93cdb6180f770",
+      "sourceSha256": "fc61daec023887a0e7af3cd29e7c706bab4df5cce0c964563733646ba7b07118",
       "status": "COAPI_OWNED"
     },
     {
@@ -117,7 +117,7 @@
       "destination": ".coapi/schemas/server-profile.schema.json",
       "outputSha256": "a213f78297dbcd8347556e71ae4beddcfc60ea0231dc331447f258114f945ce4",
       "source": ".coapi/schemas/server-profile.schema.json",
-      "sourceSha256": "10986b82596d6590c277168c0719ef709547b824e01c7132baf2aba391745d69",
+      "sourceSha256": "a213f78297dbcd8347556e71ae4beddcfc60ea0231dc331447f258114f945ce4",
       "status": "COAPI_OWNED"
     },
     {
@@ -125,7 +125,7 @@
       "destination": ".coapi/schemas/task-contract.schema.json",
       "outputSha256": "5fc43c68ff2ce36bfd8947b3d30917804bca6b1991579c9caf1a2e5d8957bb41",
       "source": ".coapi/schemas/task-contract.schema.json",
-      "sourceSha256": "93d92d8c43359f3dbfdd8f255470b801e4e3844ab615d2a30adb8bfa0a704163",
+      "sourceSha256": "5fc43c68ff2ce36bfd8947b3d30917804bca6b1991579c9caf1a2e5d8957bb41",
       "status": "COAPI_OWNED"
     },
     {
@@ -133,15 +133,31 @@
       "destination": ".coapi/schemas/workbench-session.schema.json",
       "outputSha256": "243179a11a0b0db6faf76a809c05e0b87a86aa0671316987be9ec6374878ccec",
       "source": ".coapi/schemas/workbench-session.schema.json",
-      "sourceSha256": "3500e2f5baee6a0714cb5cfa18116a895727fc00f5ec153d00b2fc64116f1347",
+      "sourceSha256": "243179a11a0b0db6faf76a809c05e0b87a86aa0671316987be9ec6374878ccec",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public issue template; no operational data or live authority.",
+      "destination": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "outputSha256": "09038e70bfedfe64af297ea17bb436139a3aa0778f7d4fcdb8b5ce7397ea3531",
+      "source": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sourceSha256": "09038e70bfedfe64af297ea17bb436139a3aa0778f7d4fcdb8b5ce7397ea3531",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public issue template; no operational data or live authority.",
+      "destination": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "outputSha256": "3f0031a50f1473ab2972a794fb0dcbff10b636cb1bbda8a66848a5e5a954cddd",
+      "source": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sourceSha256": "3f0031a50f1473ab2972a794fb0dcbff10b636cb1bbda8a66848a5e5a954cddd",
       "status": "COAPI_OWNED"
     },
     {
       "basis": "Static read-only GitHub-hosted workflow with pinned actions and no live authority.",
       "destination": ".github/workflows/public-policy.yml",
-      "outputSha256": "e4d68b60c26861ee1b96b2b562275da57690723ddeb0ff64b5b75a09c4b0f4fa",
+      "outputSha256": "99206b1ee91b6882c39241523309392923d83d388b1740bc3452e6a8146083ec",
       "source": ".github/workflows/public-policy.yml",
-      "sourceSha256": "e4d68b60c26861ee1b96b2b562275da57690723ddeb0ff64b5b75a09c4b0f4fa",
+      "sourceSha256": "99206b1ee91b6882c39241523309392923d83d388b1740bc3452e6a8146083ec",
       "status": "GENERATED_PUBLIC_SAFE"
     },
     {
@@ -163,33 +179,41 @@
     {
       "basis": "Project-owned placeholder policy containing no operational values.",
       "destination": ".publicmirror/public-placeholders.json",
-      "outputSha256": "b0f72f7a48a94459123b8174df42ee3f421a4c22dbb9f1d5b52c15a5000461de",
+      "outputSha256": "137c999a388da0e9611a23350e1b8d1945b026f20413e0e50092749b4a261612",
       "source": ".publicmirror/public-placeholders.json",
-      "sourceSha256": "1224a64e6044b652d8c743591026ce78e945c6371025079c0e045283221cf35f",
+      "sourceSha256": "137c999a388da0e9611a23350e1b8d1945b026f20413e0e50092749b4a261612",
       "status": "COAPI_OWNED"
     },
     {
       "basis": "Project-owned provenance policy.",
       "destination": ".publicmirror/public-provenance.json",
-      "outputSha256": "b55aa252271fc53207fc7aeef0db9953f74ff50153c602dcf3170f2848395690",
+      "outputSha256": "b55d8bf089c4ad9cac1da1243b800f363a73fe812ad5059a354482ffda504d16",
       "source": ".publicmirror/public-provenance.json",
-      "sourceSha256": "b55aa252271fc53207fc7aeef0db9953f74ff50153c602dcf3170f2848395690",
+      "sourceSha256": "b55d8bf089c4ad9cac1da1243b800f363a73fe812ad5059a354482ffda504d16",
       "status": "COAPI_OWNED"
     },
     {
       "basis": "Project-owned public export policy.",
       "destination": ".publicmirror/public-source-allowlist.txt",
-      "outputSha256": "9aba38e66aa076d3ef180a7e90f60939be77018100fc01e9e7dc817d60840b04",
+      "outputSha256": "0d223686ddf4b91cb1437532c6ab155a9c44c50fba3bd63ca685041f028209ae",
       "source": ".publicmirror/public-source-allowlist.txt",
-      "sourceSha256": "9aba38e66aa076d3ef180a7e90f60939be77018100fc01e9e7dc817d60840b04",
+      "sourceSha256": "0d223686ddf4b91cb1437532c6ab155a9c44c50fba3bd63ca685041f028209ae",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored public contributor instructions; static documentation scope only.",
+      "destination": "AGENTS.md",
+      "outputSha256": "597a02e87826d929c2b3ca569eb51cc819a99967fc32c85a1a76c06155498db8",
+      "source": "AGENTS.md",
+      "sourceSha256": "597a02e87826d929c2b3ca569eb51cc819a99967fc32c85a1a76c06155498db8",
       "status": "COAPI_OWNED"
     },
     {
       "basis": "Project-authored contribution policy.",
       "destination": "CONTRIBUTING.md",
-      "outputSha256": "2c0311c2298670b1d932effe883bf40a8937770dc85c6fbf6d55b4d39000e6f2",
+      "outputSha256": "1a6e96a614f334d2a86301fbffe99cb24fe17bcb5125f3d6c3827f8438c9c8f1",
       "source": "CONTRIBUTING.md",
-      "sourceSha256": "2c0311c2298670b1d932effe883bf40a8937770dc85c6fbf6d55b4d39000e6f2",
+      "sourceSha256": "1a6e96a614f334d2a86301fbffe99cb24fe17bcb5125f3d6c3827f8438c9c8f1",
       "status": "COAPI_OWNED"
     },
     {
@@ -201,12 +225,156 @@
       "status": "COAPI_OWNED"
     },
     {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/AGENT_GUIDE.md",
+      "outputSha256": "79369fd06799b286c03727ccf4ae323aa0b37eba3e7918e8e6d992e748cc9b68",
+      "source": "Docs/AddonRelay/AGENT_GUIDE.md",
+      "sourceSha256": "79369fd06799b286c03727ccf4ae323aa0b37eba3e7918e8e6d992e748cc9b68",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/ARCHITECTURE.md",
+      "outputSha256": "4db05bbb672223275af73a5f233fc5b01ce4a57da7649ec98716763e735f8762",
+      "source": "Docs/AddonRelay/ARCHITECTURE.md",
+      "sourceSha256": "4db05bbb672223275af73a5f233fc5b01ce4a57da7649ec98716763e735f8762",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/BRAIN.md",
+      "outputSha256": "8dd53f10b1195692fcbae2a41b009ebed8df3ece31e03c72b73a547bd0287469",
+      "source": "Docs/AddonRelay/BRAIN.md",
+      "sourceSha256": "8dd53f10b1195692fcbae2a41b009ebed8df3ece31e03c72b73a547bd0287469",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/CAPABILITIES.md",
+      "outputSha256": "19b3d8b3faae0fa0ad60b02bb4a90ddd8c8ed0384740bf2c165a981b6c4ba9f3",
+      "source": "Docs/AddonRelay/CAPABILITIES.md",
+      "sourceSha256": "19b3d8b3faae0fa0ad60b02bb4a90ddd8c8ed0384740bf2c165a981b6c4ba9f3",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/COMMERCIAL.md",
+      "outputSha256": "21625971a0dd8219d3d6d638a8a0e0d0ca61ed14be08fde1fe9c8049c6fa3f7c",
+      "source": "Docs/AddonRelay/COMMERCIAL.md",
+      "sourceSha256": "21625971a0dd8219d3d6d638a8a0e0d0ca61ed14be08fde1fe9c8049c6fa3f7c",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/COMPATIBILITY.md",
+      "outputSha256": "6a93425cb97e81869368f79993bfc2ef4845c44e213dd6a74530b0069fb00624",
+      "source": "Docs/AddonRelay/COMPATIBILITY.md",
+      "sourceSha256": "6a93425cb97e81869368f79993bfc2ef4845c44e213dd6a74530b0069fb00624",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/DEVELOPERS.md",
+      "outputSha256": "2e013e9afd4d3097c40029b97a26ef7e100ef1e826943bc39bde0f45ec396b0f",
+      "source": "Docs/AddonRelay/DEVELOPERS.md",
+      "sourceSha256": "2e013e9afd4d3097c40029b97a26ef7e100ef1e826943bc39bde0f45ec396b0f",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/FAQ.md",
+      "outputSha256": "49914df6225197d81af5859236aa9c1025fd4c66a1c64948ea81da92e58f5495",
+      "source": "Docs/AddonRelay/FAQ.md",
+      "sourceSha256": "49914df6225197d81af5859236aa9c1025fd4c66a1c64948ea81da92e58f5495",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/PRIVACY.md",
+      "outputSha256": "eb8b4398dc74fdf456d2949deb46ba2cc278243848624f7981f47d4715896a63",
+      "source": "Docs/AddonRelay/PRIVACY.md",
+      "sourceSha256": "eb8b4398dc74fdf456d2949deb46ba2cc278243848624f7981f47d4715896a63",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/README.md",
+      "outputSha256": "cefdbc6596e7e218dc61fce0cd22f81c3bc07d5e1038c40e50053162145b458e",
+      "source": "Docs/AddonRelay/README.md",
+      "sourceSha256": "cefdbc6596e7e218dc61fce0cd22f81c3bc07d5e1038c40e50053162145b458e",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/ROADMAP.md",
+      "outputSha256": "23ee6f68730fae5e78e9cff2341ae4a59db5a6a26f54ffbc1dde62e86ee7297d",
+      "source": "Docs/AddonRelay/ROADMAP.md",
+      "sourceSha256": "23ee6f68730fae5e78e9cff2341ae4a59db5a6a26f54ffbc1dde62e86ee7297d",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Project-authored AddonRelay public product documentation; available, historical and proposed capabilities are distinguished; no private operational material.",
+      "destination": "Docs/AddonRelay/START_HERE.md",
+      "outputSha256": "1e89b78317da33841061435df9eb7db2a50b32f3e07d71d72d9539b5fd47b2a5",
+      "source": "Docs/AddonRelay/START_HERE.md",
+      "sourceSha256": "1e89b78317da33841061435df9eb7db2a50b32f3e07d71d72d9539b5fd47b2a5",
+      "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Preexisting project-generated public support material at public commit 84e937faa9af6a1131f77982f4203282654eacf3, retained unchanged as historical evidence. This records existing publication, not a new third-party redistribution license or verification of reported findings.",
+      "destination": "Docs/HSC-Server-Performance-Incident-2026-09-25/DATA_CAPTURE_TEMPLATE.md",
+      "outputSha256": "b9368b2d1e9a42e00747cb0654d925a138962ac328b72f6f33606b50eeb9f274",
+      "source": "Docs/HSC-Server-Performance-Incident-2026-09-25/DATA_CAPTURE_TEMPLATE.md",
+      "sourceSha256": "b9368b2d1e9a42e00747cb0654d925a138962ac328b72f6f33606b50eeb9f274",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
+      "basis": "Preexisting project-generated public support material at public commit 84e937faa9af6a1131f77982f4203282654eacf3, retained unchanged as historical evidence. This records existing publication, not a new third-party redistribution license or verification of reported findings.",
+      "destination": "Docs/HSC-Server-Performance-Incident-2026-09-25/HOST_CHECKLIST.md",
+      "outputSha256": "0697bdb054f03bf9d8515e38a98642530b639792ce4dd6240c60afba6c0d33ca",
+      "source": "Docs/HSC-Server-Performance-Incident-2026-09-25/HOST_CHECKLIST.md",
+      "sourceSha256": "0697bdb054f03bf9d8515e38a98642530b639792ce4dd6240c60afba6c0d33ca",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
+      "basis": "Preexisting project-generated public support material at public commit 84e937faa9af6a1131f77982f4203282654eacf3, retained unchanged as historical evidence. This records existing publication, not a new third-party redistribution license or verification of reported findings.",
+      "destination": "Docs/HSC-Server-Performance-Incident-2026-09-25/README.md",
+      "outputSha256": "b58e218cb994676e0c955c43dcf50dd1e12278fb9e7ea88ca9aed898774618e1",
+      "source": "Docs/HSC-Server-Performance-Incident-2026-09-25/README.md",
+      "sourceSha256": "b58e218cb994676e0c955c43dcf50dd1e12278fb9e7ea88ca9aed898774618e1",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
+      "basis": "Preexisting project-generated public support material at public commit 84e937faa9af6a1131f77982f4203282654eacf3, retained unchanged as historical evidence. This records existing publication, not a new third-party redistribution license or verification of reported findings.",
+      "destination": "Docs/HSC-Server-Performance-Incident-2026-09-25/TIMELINE.md",
+      "outputSha256": "3610a70ea1089fdb46a506031c35f7493fb53164f994aa8e23602b8fd4ae0dc5",
+      "source": "Docs/HSC-Server-Performance-Incident-2026-09-25/TIMELINE.md",
+      "sourceSha256": "3610a70ea1089fdb46a506031c35f7493fb53164f994aa8e23602b8fd4ae0dc5",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
+      "basis": "Preexisting project-generated public support material at public commit 84e937faa9af6a1131f77982f4203282654eacf3, retained unchanged as historical evidence. This records existing publication, not a new third-party redistribution license or verification of reported findings.",
+      "destination": "Docs/OPENAI_SUPPORT_PARALLEL_AGENT_EVIDENCE.md",
+      "outputSha256": "d47bfab5da9a436b330d847e2b6bf31763900ff1f951f4fe1ca9424a1036a21c",
+      "source": "Docs/OPENAI_SUPPORT_PARALLEL_AGENT_EVIDENCE.md",
+      "sourceSha256": "d47bfab5da9a436b330d847e2b6bf31763900ff1f951f4fe1ca9424a1036a21c",
+      "status": "GENERATED_PUBLIC_SAFE"
+    },
+    {
       "basis": "Project-authored public boundary documentation.",
       "destination": "Docs/PUBLIC_MIRROR_POLICY.md",
       "outputSha256": "4f9231e61a42d9964c5593052e49de551a3c42f856f48d28ea485e8bb11581fc",
       "source": "Docs/PUBLIC_MIRROR_POLICY.md",
       "sourceSha256": "4f9231e61a42d9964c5593052e49de551a3c42f856f48d28ea485e8bb11581fc",
       "status": "COAPI_OWNED"
+    },
+    {
+      "basis": "Preexisting project-generated public support material at public commit 84e937faa9af6a1131f77982f4203282654eacf3, retained unchanged as historical evidence. This records existing publication, not a new third-party redistribution license or verification of reported findings.",
+      "destination": "Docs/support-evidence/2026-09-11/benchmark407.json",
+      "outputSha256": "e98c257cbd01a288b6b4d4839d10eea2b7214a64df5e8b7111514d881ed57fce",
+      "source": "Docs/support-evidence/2026-09-11/benchmark407.json",
+      "sourceSha256": "e98c257cbd01a288b6b4d4839d10eea2b7214a64df5e8b7111514d881ed57fce",
+      "status": "GENERATED_PUBLIC_SAFE"
     },
     {
       "basis": "Project-authored rights notice; no license grant is inferred.",
@@ -219,9 +387,9 @@
     {
       "basis": "Project-authored public landing documentation.",
       "destination": "README.md",
-      "outputSha256": "222335c4a2b6060af7f9ab8e2efc10e3105c12edde8697db05765e04521dc818",
+      "outputSha256": "945bed01f945473c2de00d69491b63146938949c4bb4573f50978b866dbd7565",
       "source": "README.md",
-      "sourceSha256": "2744b04b524d7f2b422590884effe2f4a9495646d6fada98ad9d0dd3eac69924",
+      "sourceSha256": "945bed01f945473c2de00d69491b63146938949c4bb4573f50978b866dbd7565",
       "status": "COAPI_OWNED"
     },
     {
@@ -237,7 +405,7 @@
       "destination": "Tests/policy/test_stage1_control_plane.py",
       "outputSha256": "9add137bad9945d31e2138455f804b6d2483ae8d8aa3d6b631aa0cafe2f49ba8",
       "source": "Tests/policy/test_stage1_control_plane.py",
-      "sourceSha256": "e181beed80753f7702fdb9816a7f589fa3337b24eb3043214fd20788bcb483f6",
+      "sourceSha256": "9add137bad9945d31e2138455f804b6d2483ae8d8aa3d6b631aa0cafe2f49ba8",
       "status": "COAPI_OWNED"
     },
     {
@@ -245,7 +413,7 @@
       "destination": "Tools/COAPI/Acquire-COAPILock.ps1",
       "outputSha256": "1fa9ac70764cd3c54d6e94dc76d7be0fa78a00633d0696d2ca2b18cc486a8bc1",
       "source": "Tools/COAPI/Acquire-COAPILock.ps1",
-      "sourceSha256": "f097303ea5dd7db30e5fe00ca8d3606cf91b43b78e8a3f761f1c4f56cc95ed2f",
+      "sourceSha256": "1fa9ac70764cd3c54d6e94dc76d7be0fa78a00633d0696d2ca2b18cc486a8bc1",
       "status": "COAPI_OWNED"
     },
     {
@@ -253,7 +421,7 @@
       "destination": "Tools/COAPI/Invoke-COAPIBounded.ps1",
       "outputSha256": "84a11e2bbaed9526faa9d99ab415db0554b9afd03be73a3cb9f7e7bc6439ed18",
       "source": "Tools/COAPI/Invoke-COAPIBounded.ps1",
-      "sourceSha256": "bae0b581d39a482c80bcc6577297da935f470b238642244336a2bdaa02aba313",
+      "sourceSha256": "84a11e2bbaed9526faa9d99ab415db0554b9afd03be73a3cb9f7e7bc6439ed18",
       "status": "COAPI_OWNED"
     },
     {
@@ -275,17 +443,17 @@
     {
       "basis": "Project-authored redacted scanner and deterministic exporter.",
       "destination": "Tools/COAPI/Public/audit_public_export.py",
-      "outputSha256": "f7e550f9e4288f6cd59a79b2ca9709c13dbedb9b95c761724674b4cd986ef8af",
+      "outputSha256": "b2aba87a700b62989e9b7307a336d59dda3a012b8d3bd43d81852eff1d6c979c",
       "source": "Tools/COAPI/Public/audit_public_export.py",
-      "sourceSha256": "f7e550f9e4288f6cd59a79b2ca9709c13dbedb9b95c761724674b4cd986ef8af",
+      "sourceSha256": "b2aba87a700b62989e9b7307a336d59dda3a012b8d3bd43d81852eff1d6c979c",
       "status": "COAPI_OWNED"
     },
     {
       "basis": "Project-authored refusal and determinism tests.",
       "destination": "Tools/COAPI/Public/test_audit_public_export.py",
-      "outputSha256": "a1b639668090f721c4f22076e0405e9f3da9a7471d4528a5467822cdda1f5b73",
+      "outputSha256": "5a398dc0308e19131b79da46fd7ee3bc546f7d65d12ff2380e94c325f9d940d4",
       "source": "Tools/COAPI/Public/test_audit_public_export.py",
-      "sourceSha256": "a1b639668090f721c4f22076e0405e9f3da9a7471d4528a5467822cdda1f5b73",
+      "sourceSha256": "5a398dc0308e19131b79da46fd7ee3bc546f7d65d12ff2380e94c325f9d940d4",
       "status": "COAPI_OWNED"
     },
     {
@@ -293,7 +461,7 @@
       "destination": "Tools/COAPI/Register-COAPIProgress.ps1",
       "outputSha256": "dc16c5cd70bb74a353e236551aa51e0c170607145674de08570a093cde821647",
       "source": "Tools/COAPI/Register-COAPIProgress.ps1",
-      "sourceSha256": "db2fb0411402a562c6beda4e098d824db47909df11aa38f0c0bab976dcc74643",
+      "sourceSha256": "dc16c5cd70bb74a353e236551aa51e0c170607145674de08570a093cde821647",
       "status": "COAPI_OWNED"
     },
     {
@@ -301,7 +469,7 @@
       "destination": "Tools/COAPI/coapi_control.py",
       "outputSha256": "9a70112e85736c67995981584324c2f1c60d361446184748908c664028241004",
       "source": "Tools/COAPI/coapi_control.py",
-      "sourceSha256": "588714ca38734523c98815cd7999ac1074f6ebfdb6cf3cc1a0f1d8d9efa2ee7f",
+      "sourceSha256": "9a70112e85736c67995981584324c2f1c60d361446184748908c664028241004",
       "status": "COAPI_OWNED"
     },
     {
@@ -309,7 +477,7 @@
       "destination": "Tools/COAPI/schema_migrations.py",
       "outputSha256": "65ab4dba8570e9c6c87eed5eed60dfbb09567531a0be854ab87c57c84f3590a9",
       "source": "Tools/COAPI/schema_migrations.py",
-      "sourceSha256": "4e18f33e0a427cb62be7169fab3f96eeb6f60bd45d44cae14670f7245bba5cc1",
+      "sourceSha256": "65ab4dba8570e9c6c87eed5eed60dfbb09567531a0be854ab87c57c84f3590a9",
       "status": "COAPI_OWNED"
     },
     {
