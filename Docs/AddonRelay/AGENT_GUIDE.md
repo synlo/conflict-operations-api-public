@@ -15,7 +15,7 @@ The selected directory is a working boundary, not permission for arbitrary syste
 3. Identify the actual `companion.mjs` file and the project directory.
 4. Use a client that supports a local stdio MCP server.
 
-You do not need to start `launch.cmd` for the MCP connection. The AI client starts the companion. `launch.cmd` is the separate human-interface entry point.
+The AI client starts the companion directly. No AddonRelay browser workspace or graphical launcher is required for this connection.
 
 You can identify the installed Node executable with:
 
@@ -55,7 +55,7 @@ Keep machine-specific connection settings in the client's trusted local configur
 
 ## Verify the connection
 
-Use the client's MCP connection view to confirm that the expected server is running and the expected tools are listed. A successful connection proves that the client can communicate with the companion. It does not prove native Workbench execution or full project compatibility.
+Use your client's tool-discovery or connection-status facilities to confirm that the expected server is running and the expected tools are listed. A successful connection proves that the client can communicate with the companion. It does not prove native Workbench execution or full project compatibility.
 
 The current tool set is:
 
@@ -124,11 +124,9 @@ Do not solve a connection problem by disabling certificate checks, broadening fi
 
 ## Planned native integration
 
-The future native connection will expose discoverable supported operations, preparation, execution, operation status, reconciliation, evidence, and project knowledge. Agent and developer interfaces will call the same controller. Arbitrary shell execution is not the proposed public operation interface.
+Supported native checks, interruption recovery, and persistent project knowledge will be documented with the qualified distribution. No compile, packaging, publication, deployment, or Brain tool is added by this guide. The initial launch requires no AddonRelay graphical interface.
 
-Those are design capabilities, not current MCP tool names. No compile, packaging, publication, deployment, or Brain command is added by this guide. Follow the [roadmap](ROADMAP.md) and [architecture](ARCHITECTURE.md) for the proposed contracts and their acceptance.
-
-See [Compatibility](COMPATIBILITY.md) for qualification scope and [Privacy](PRIVACY.md) for the AI-provider data path.
+See [capability status](CAPABILITIES.md), [compatibility](COMPATIBILITY.md), and [privacy](PRIVACY.md) for the current boundary and AI-provider data path.
 
 ## Protocol reference
 

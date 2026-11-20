@@ -1,29 +1,19 @@
-# AddonRelay public guide
+# AddonRelay documentation
 
-This guide describes the product direction, existing local diagnostics, and the work required for a public framework and Brain launch. Its status labels distinguish inspected implementation from a distributed, qualified product.
+The initial launch connects AI agents to a local development project without an AddonRelay graphical application. This documentation describes the customer interface and its availability. Detailed implementation plans and source are maintained privately.
 
-## Choose an entry point
+| Guide | What it answers |
+|---|---|
+| [Start here](START_HERE.md) | What do I need and how do I begin? |
+| [Agent integration](AGENT_GUIDE.md) | How does my client invoke the companion and call its tools? |
+| [Expert developers](DEVELOPERS.md) | How do I integrate the same tools into my workflow? |
+| [Connection model](ARCHITECTURE.md) | What runs locally and what permissions does it need? |
+| [Project Brain](BRAIN.md) | What is the planned memory capability? |
+| [Capabilities](CAPABILITIES.md) | What exists and what remains planned? |
+| [Compatibility](COMPATIBILITY.md) | Which combinations and result scopes are supported? |
+| [Roadmap](ROADMAP.md) | What outcomes are required for launch? |
+| [Privacy](PRIVACY.md) | Where do selected inputs and results go? |
+| [Commercial direction](COMMERCIAL.md) | Is an account, API key, or purchase required? |
+| [FAQ](FAQ.md) | What are the common setup and product questions? |
 
-| Reader | Start with | Then read |
-|---|---|---|
-| AI-agent user | [Agent guide](AGENT_GUIDE.md) | [Capabilities](CAPABILITIES.md), [Brain](BRAIN.md) |
-| Workbench developer | [Developer workflow](DEVELOPERS.md) | [Architecture](ARCHITECTURE.md), [Compatibility](COMPATIBILITY.md) |
-| Prospective user | [Start here](START_HERE.md) | [Roadmap](ROADMAP.md), [FAQ](FAQ.md) |
-| Team or commercial evaluator | [Privacy](PRIVACY.md) | [Commercial direction](COMMERCIAL.md), [Roadmap](ROADMAP.md) |
-| Contributor | [Contribution guide](../../CONTRIBUTING.md) | [Public mirror policy](../PUBLIC_MIRROR_POLICY.md) |
-
-## How to read availability
-
-- **Implemented local capability:** behavior present in the inspected companion or local workspace implementation. This label is not a new cross-client or native-engine test.
-- **Repository preview:** public documentation and the retained backend subset available in this repository.
-- **Planned:** a target capability with work and acceptance remaining before a supported public release.
-- **Closed:** no new public account, payment, or service access is being offered for that capability.
-- **Historical:** earlier published source or evidence retained for context; applicability to a new release must be established.
-
-The [capability table](CAPABILITIES.md) is the central description of the current public scope. The [roadmap](ROADMAP.md) describes target behavior and completion evidence. Neither is a promise that the other has already shipped.
-
-## Publication record
-
-This documentation preview was prepared on **2026-11-19**. It does not assign a new application or engine version. The repository commit identifies the documentation and public-source bytes. A future supported application release needs its own artifact, component manifest, checksum, compatibility record, and release notes.
-
-The public guide uses original product explanations and synthetic examples. Private project histories, service configuration, customer records, unpublished source, and operator credentials are outside its publication scope.
+Use [public issues](https://github.com/synlo/conflict-operations-api-public/issues) for non-sensitive questions and the [security policy](../../SECURITY.md) for security reports.

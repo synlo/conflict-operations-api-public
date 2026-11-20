@@ -6,4 +6,4 @@ Use the repository's private security-advisory channel for a suspected vulnerabi
 
 Reports should identify the affected public commit, file, and behavior without including secret values. The maintainers may request a sanitized reproducer through the advisory.
 
-The public mirror has no live deployment authority. A public workflow or source change that introduces repository secrets, self-hosted runners, environments, deployment commands, provider access, or server-control commands is a security defect.
+The public documentation workflow has no live deployment authority. A change that introduces repository secrets, self-hosted runners, environments, deployment commands, provider access, or server-control commands is a security defect.
