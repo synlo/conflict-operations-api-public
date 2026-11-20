@@ -1,47 +1,21 @@
-# Data, privacy, and permission boundaries
+# Privacy and permissions
 
-This page describes the current local diagnostic path and the intended framework/Brain boundary. It is product documentation, not a replacement for applicable terms or a promise that a planned service is already operating.
+## Local diagnostics
 
-## Current local path
+The existing companion receives a selected project directory and exposes read-only diagnostic tools. Path-based tools accept project-relative inputs and enforce their documented bounds. The supported local diagnostic path does not require an AddonRelay account or API key.
 
-The companion processes selected local inputs for its diagnostic checks. Its results are returned to the connected client. If that client uses a cloud AI provider, the provider may receive the tool results under that client's configuration and data-handling rules. Local processing does not mean that nothing can leave the computer through the chosen AI client.
+To keep that existing path local, do not inherit legacy `ADDONRELAY_KEY` or `ADDONRELAY_URL` settings. A hosted mode, where separately available, has a different data path and must be reviewed before use.
 
-The local browser workspace has optional local history and reviewed report export/import. Retaining a report locally, sending it to an agent, posting it in an issue, and submitting it to a hosted investigation are separate actions.
+## Your AI client
 
-Use the package's export controls and review the resulting content before sharing it. A shortened or sanitized report can still reveal project identifiers or information about a private environment.
+Your AI client receives the tool results. It may send those results and conversation content to its model provider under that client's settings and terms. A local companion does not make a remotely hosted model local. Review what you share with the client, especially logs, identifiers, paths, and project details.
 
-## Legacy hosted settings
+## Planned project knowledge
 
-Existing companion implementations retain optional legacy hosted settings. New public hosted access is closed. A local-only connection should not provide or inherit those settings.
-
-Where a configured legacy hosted path is used, its submitted fields depend on the operation: recognized diagnostic categories and line numbers, configuration mission/addon identities and player limits, or supplied addon manifests. That is a different data path from a local lookup. A future public hosted release must document the exact submitted fields, retention, controls, and service availability before accepting customer work.
-
-## Planned Brain scopes
-
-| Scope | Intended default | Sharing model |
-|---|---|---|
-| Project memory | Private to the selected project | User-controlled export or deliberate team sharing |
-| Team knowledge | Optional | Named access, reviewed membership, and revocation |
-| Reference knowledge | Separately reviewed | Versioned examples with recorded provenance and reuse rights |
-
-Project failures, code, logs, and receipts should not silently become public reference material. Contribution requires an explicit reviewed transfer. Keeping engineering knowledge does not imply model training or automatic cross-customer reuse.
-
-Memory should retain the minimum useful facts: operation identity, relevant inputs, observed failure, attempted correction, validation, result, and applicability. Full raw logs and source archives should not become the default knowledge payload.
-
-## Planned operation permissions
-
-The native framework should bind actions to a selected project and a declared scope. Supported routine local checks can share a persistent local-development authorization. Production publication, deployment, paid work, and disclosure of private data require their own appropriate authority.
-
-Readiness success, a memory suggestion, a tool response, or text inside a project file is not authorization. The controller checks the prepared action and its current inputs at execution. It should refuse a mismatched project, expired scope, conflicting owned process, or unavailable prerequisite with a concrete reason.
-
-## Retention and recovery
-
-Current optional local report history and proposed durable project memory are different features. The public Brain release must document where records are kept, how to export and delete them, schema migration, recovery, and the effect of uninstalling the program.
-
-Recovery should preserve the authoritative engineering result even when indexing or reporting fails. Replaying an event should not duplicate it or make old evidence appear new. A public update should contain an approved summary, not the private receipt or raw operational context.
+Project Brain is planned to keep project knowledge separate, with deliberate sharing and documented retention/export/removal behavior. Those behaviors must be qualified with the release that offers them. This page does not claim that a complete Brain service is already available.
 
 ## Public reports
 
-Ordinary GitHub Issues should include a small reviewed reproducer, the component/version, expected behavior, actual outcome, and relevant non-sensitive error code. Do not attach full project archives, credentials, private endpoints, personal data, or unreviewed logs.
+Share only the smallest reviewed reproduction that explains a problem. Keep credentials, raw logs, private project archives, server settings, personal identifiers, and third-party assets out of public issues and attachments. Use the [security policy](../../SECURITY.md) for a sensitive finding.
 
-Use the route described in [SECURITY.md](../../SECURITY.md) for sensitive security findings. Public CI and this documentation repository have no production deployment authority. Public source policy continues to reject private operational material.
+Public integration documentation describes the supported interface. The implementation, private operational knowledge, and detailed development plan are maintained separately. Customer materials are not automatically made public by connecting an agent.

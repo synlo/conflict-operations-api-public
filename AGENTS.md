@@ -1,23 +1,24 @@
-# Working in the AddonRelay public repository
+# Working in the AddonRelay public documentation
 
-This repository is a public documentation and roadmap home with a historical COAPI backend subset. Read `README.md`, `Docs/AddonRelay/CAPABILITIES.md`, `NOTICE.md`, and the existing public mirror policy before proposing a change.
+This repository contains customer documentation and the supported integration contract. Read `README.md`, `Docs/AddonRelay/CAPABILITIES.md`, and `NOTICE.md` before making changes.
 
-## Scope
+## Product direction
 
-- Preserve the distinction between existing local diagnostics, the historical backend subset, and planned native framework/Brain capabilities.
-- Do not describe a roadmap contract or illustrative command as an available tool.
-- Do not import private repositories, operational reports, customer/project knowledge, raw logs, server settings, credentials, downloaded addons, or game assets.
-- Keep the public workflow static, read-only, and independent of production systems.
-- Preserve historical failures and evidence. New documentation is not a new engine acceptance result.
+- The initial launch is agent-first, through a local companion. No AddonRelay graphical application, dashboard, or browser workspace is required for that launch.
+- A supporting command-line path is planned for setup and diagnostics. Do not invent commands or describe them as released.
+- Distinguish the existing read-only tools from planned native execution and project Brain capabilities.
+- Publish instructions customers need to connect safely: actual inputs, outputs, permissions, compatibility, availability, and useful errors.
 
-## Changes and validation
+## Publication boundary
 
-Use one writer for a given file set. Keep changes scoped, review the exact diff, and follow `CONTRIBUTING.md`. New files need explicit allowlist and provenance entries; changed bytes need a regenerated public manifest. Never weaken a scanner or change a failure into a pass merely to publish a document.
+- Keep implementation source, internal architecture, detailed implementation plans, controller algorithms, internal schemas, and private knowledge outside this repository.
+- Never import operational reports, raw logs, customer projects, server settings, credentials, private endpoints, game assets, or downloaded addons.
+- Public issue and pull-request descriptions, screenshots, attachments, workflow output, and releases need the same review as files.
+- Do not automatically mirror a private checkout here. An allowed filename does not make its contents suitable for publication.
+- Do not promise that public documentation or distributed executables cannot be inspected or independently reproduced.
 
-For product documentation, check relative links, code examples, status consistency, and accidental private data. For policy or exporter behavior changes, run the relevant existing tests and a focused regression that proves the failure being corrected.
+## Validation and reporting
 
-Do not launch native Workbench, modify a game project, publish a Workshop package, access production hosts, or start a paid service as part of a public documentation task. Such operations are not provided by this repository.
+Use one writer for a file set. Stage only intended files, review the complete diff, run `python .github/scripts/check_public_docs.py`, and check example accuracy against the supported artifact. The checker covers tracked paths, links, and selected disclosure patterns; it is not a confidentiality guarantee.
 
-## Reporting
-
-Report the exact files changed, checks actually run, and any remaining publication limitation. Distinguish source inspection, local validation, remote CI, and runtime evidence. Do not claim that public visibility grants an open-source license.
+Keep CI read-only and independent of production credentials, self-hosted runners, native Workbench, and deployment. Documentation changes do not establish a new application, game, or engine test result. Report only work and checks actually completed.
