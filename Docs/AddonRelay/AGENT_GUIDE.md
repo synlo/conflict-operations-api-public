@@ -124,7 +124,7 @@ Do not solve a connection problem by disabling certificate checks, broadening fi
 
 ## Planned native integration
 
-Supported native checks, interruption recovery, and persistent project knowledge will be documented with the qualified distribution. No compile, packaging, publication, deployment, or Brain tool is added by this guide. The initial launch requires no AddonRelay graphical interface.
+Supported native checks, interruption recovery, and persistent project knowledge will be documented with the qualified distribution. No compile, packaging, publication, deployment, or Brain tool is added by this guide. Local agent setup requires no desktop GUI or dashboard session. Optional project activity synchronization and a responsive browser dashboard are planned. Their supported credentials, fields and permissions will be documented when qualified; this guide does not add an activity API.
 
 See [capability status](CAPABILITIES.md), [compatibility](COMPATIBILITY.md), and [privacy](PRIVACY.md) for the current boundary and AI-provider data path.
 

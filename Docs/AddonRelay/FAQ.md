@@ -1,8 +1,24 @@
 # Frequently asked questions
 
-## Do I need another graphical application?
+## Do I need a desktop application?
 
-No AddonRelay graphical interface is required for the initial launch. The agent starts a local companion directly. The website remains the documentation and download surface. A graphical client is deferred.
+No separate AddonRelay desktop GUI is required. Your supported agent starts the headless local companion. A responsive browser dashboard is planned for project visibility, activity, usage, credits and connections. Local tools remain usable without signing in to it.
+
+## Can I check my project from a phone?
+
+That is the intended dashboard experience. Sign in from a phone to see work reported by a linked project and its last-update time. Workbench still runs on an authorized development host; the phone is the viewing interface. The new project dashboard remains planned, not announced as live.
+
+## Is an API key my dashboard login?
+
+No. People use account sign-in. Agents or backends will use credentials limited to their permitted projects and actions. An activity key should not grant access to account administration, purchases or other projects.
+
+## What usage and credits will it show?
+
+Reported project activity and AddonRelay credits, with free local work separated from billable hosted jobs. Reserved amounts and final charges should be distinct. It will not claim to show your Codex, Claude or other provider balance without an actual supported provider connection.
+
+## What if the development computer or connection goes offline?
+
+The planned view will show the last received update and a stale/disconnected indication. Missing updates do not prove that a run failed or succeeded. Later synchronization should recover retained results without repeating native work.
 
 ## Can an API key replace the local companion?
 
@@ -18,7 +34,7 @@ Use a client that supports the documented local MCP invocation and is qualified 
 
 ## Can an experienced developer use it?
 
-Yes, the same published contract is intended for expert integrations. A supporting setup and diagnostics CLI is planned. There is no separate GUI requirement or current public implementation SDK announced by these documents.
+Yes, the same published contract is intended for expert integrations. A supporting setup and diagnostics CLI is planned. The planned browser dashboard can provide project visibility, and there is no desktop GUI requirement or current public implementation SDK announced by these documents.
 
 ## Is Brain another AI model?
 

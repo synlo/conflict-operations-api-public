@@ -4,9 +4,10 @@ This repository contains customer documentation and the supported integration co
 
 ## Product direction
 
-- The initial launch is agent-first, through a local companion. No AddonRelay graphical application, dashboard, or browser workspace is required for that launch.
+- The current product direction combines agent-first local tools with a planned responsive browser dashboard for project activity, usage, credits and connections. No separate desktop GUI is required. The dashboard is optional for local use, but part of the intended full product.
 - A supporting command-line path is planned for setup and diagnostics. Do not invent commands or describe them as released.
-- Distinguish the existing read-only tools from planned native execution and project Brain capabilities.
+- Distinguish existing read-only tools from planned native execution, project Brain, scoped activity connections and browser monitoring. Documentation does not activate public accounts, hosted jobs or billing.
+- Describe human sign-in and scoped agent credentials separately. Local activity is not a credit charge; AddonRelay credits are not third-party model credits. Do not invent endpoints, live behavior or account access.
 - Publish instructions customers need to connect safely: actual inputs, outputs, permissions, compatibility, availability, and useful errors.
 
 ## Publication boundary

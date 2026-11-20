@@ -1,6 +1,6 @@
 # Experienced developer integration
 
-The first AddonRelay launch is agent-first. Developers who prefer terminal tools can use the same published integration and the planned setup/diagnostics CLI. A separate graphical client is outside the initial launch.
+The first AddonRelay launch is agent-first. Developers who prefer terminal tools can use the same published integration and the planned setup/diagnostics CLI. A separate desktop GUI is outside the initial launch; the responsive browser project dashboard is planned for shared visibility.
 
 ## Use the supported interface
 
@@ -9,6 +9,8 @@ The existing companion exposes the read-only MCP tools in the [agent guide](AGEN
 Current reports are JSON inside an MCP text content block. Respect coverage, limitations, errors, and `engine-not-tested`. Do not assume native execution, full dependency resolution, or a verified repair from a static inspection.
 
 There is no released general command-line operation suite or public implementation SDK announced by these documents. Native operation and project-memory interfaces will be documented with the artifact that qualifies them. Avoid depending on internal files, undocumented endpoints, or inferred command names.
+
+The planned browser connection lets an authorized agent or backend report scoped activity for a selected project. It will not grant account administration or native publication merely through possession of an activity key. Exact external contracts will be published with the qualified capability.
 
 ## Integration expectations
 

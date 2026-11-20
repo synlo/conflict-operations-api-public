@@ -1,13 +1,13 @@
 # AddonRelay documentation
 
-The initial launch connects AI agents to a local development project without an AddonRelay graphical application. This documentation describes the customer interface and its availability. Detailed implementation plans and source are maintained privately.
+The planned product connects AI agents to a local project and lets people view approved project activity, usage and credits in a browser on a computer or phone. No separate desktop GUI is required. This documentation describes the customer interface and its availability. Detailed implementation plans and source are maintained privately.
 
 | Guide | What it answers |
 |---|---|
 | [Start here](START_HERE.md) | What do I need and how do I begin? |
 | [Agent integration](AGENT_GUIDE.md) | How does my client invoke the companion and call its tools? |
 | [Expert developers](DEVELOPERS.md) | How do I integrate the same tools into my workflow? |
-| [Connection model](ARCHITECTURE.md) | What runs locally and what permissions does it need? |
+| [Connection model](ARCHITECTURE.md) | What runs locally, what appears in the browser, and what permissions are needed? |
 | [Project Brain](BRAIN.md) | What is the planned memory capability? |
 | [Capabilities](CAPABILITIES.md) | What exists and what remains planned? |
 | [Compatibility](COMPATIBILITY.md) | Which combinations and result scopes are supported? |

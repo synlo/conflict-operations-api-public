@@ -12,8 +12,11 @@ This page distinguishes the existing companion implementation from the planned p
 | Supported Workbench execution and interruption recovery | Planned public integration, requiring its own qualification. |
 | Persistent project Brain | Planned public integration. |
 | Supporting setup/diagnostics CLI | Planned; no general CLI commands are announced here. |
-| AddonRelay graphical application | Deferred from the initial launch. |
-| New public hosted accounts and billing | Closed; optional hosted value is a separate future track. |
+| Responsive browser project dashboard | Planned: project activity, result scope, freshness, usage, credits and connections on computers/phones. |
+| Scoped agent/backend activity connection | Planned; supported fields and permissions will be published with acceptance. |
+| Separate desktop GUI | Not required for the intended product. |
+| New public dashboard/account access | Closed pending account, privacy, isolation and browser acceptance. |
+| Hosted paid investigations and billing | Closed; qualified independently from monitoring. |
 
 ## What a result means
 

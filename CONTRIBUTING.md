@@ -1,6 +1,6 @@
 # Contributing
 
-Public contributions should improve customer documentation, supported agent integration examples, and reproducible product reports. The initial product direction is a headless local connector for AI agents, with a supporting command-line path. Graphical application work is deferred.
+Public contributions should improve customer documentation, supported agent integration examples, and reproducible product reports. The product direction is a headless connector for AI agents, a supporting command-line path and a responsive browser dashboard. Customer-facing dashboard documentation is in scope; a separate desktop GUI remains deferred. Detailed implementation work stays private.
 
 ## Before proposing a change
 
