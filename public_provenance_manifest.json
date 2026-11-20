@@ -403,9 +403,9 @@
     {
       "basis": "Project-authored control-plane refusal tests.",
       "destination": "Tests/policy/test_stage1_control_plane.py",
-      "outputSha256": "9add137bad9945d31e2138455f804b6d2483ae8d8aa3d6b631aa0cafe2f49ba8",
+      "outputSha256": "94a869ac8a263a507e3fa237bf980466e9b601e9d9b0ee9c9667b2edd7f889ac",
       "source": "Tests/policy/test_stage1_control_plane.py",
-      "sourceSha256": "9add137bad9945d31e2138455f804b6d2483ae8d8aa3d6b631aa0cafe2f49ba8",
+      "sourceSha256": "94a869ac8a263a507e3fa237bf980466e9b601e9d9b0ee9c9667b2edd7f889ac",
       "status": "COAPI_OWNED"
     },
     {
