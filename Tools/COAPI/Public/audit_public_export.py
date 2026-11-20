@@ -17,6 +17,7 @@ import shutil
 import stat
 import subprocess
 import sys
+import tempfile
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
@@ -767,6 +768,30 @@ def git_paths(repository: Path, *arguments: str) -> list[str]:
     return [item.decode("utf-8", errors="surrogateescape") for item in raw.split(b"\0") if item]
 
 
+def verify_git_index(repository: Path) -> dict[str, Any]:
+    """Verify exact tracked bytes in a disposable tree without checkout metadata."""
+    raw = git_bytes(repository, "ls-files", "-s", "-z")
+    with tempfile.TemporaryDirectory(prefix="coapi-public-verify-") as temporary:
+        destination = Path(temporary)
+        for item in raw.split(b"\0"):
+            if not item:
+                continue
+            metadata, raw_path = item.split(b"\t", 1)
+            mode, blob, stage = metadata.decode("ascii").split()
+            relative = raw_path.decode("utf-8")
+            normalized = normalize_relative(relative, "Git index path")
+            if normalized != relative or ":" in relative or ".git" in PurePosixPath(relative).parts:
+                raise AuditError("Git index contains an unsupported path")
+            if mode not in {"100644", "100755"} or stage != "0":
+                raise AuditError("Git index contains a nonregular or unmerged entry")
+            target = destination / normalized
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(git_bytes(repository, "cat-file", "blob", blob))
+        result = verify_manifest(destination)
+    result["scope"] = "tracked-git-index"
+    return result
+
+
 def scan_git_index(repository: Path, patterns: list[dict[str, Any]]) -> dict[str, Any]:
     raw = git_bytes(repository, "ls-files", "-s", "-z")
     rows: list[dict[str, Any]] = []
@@ -1059,6 +1084,12 @@ def command_verify(args: argparse.Namespace) -> int:
     return 0 if result["status"] == "PASS" else 2
 
 
+def command_verify_index(args: argparse.Namespace) -> int:
+    result = verify_git_index(Path(args.repository))
+    print(json.dumps(result, indent=2, sort_keys=True))
+    return 0 if result["status"] == "PASS" else 2
+
+
 def command_staged(args: argparse.Namespace) -> int:
     result = scan_git_index(Path(args.repository), load_content_patterns(Path(args.patterns)))
     if args.output:
@@ -1119,6 +1150,10 @@ def parser() -> argparse.ArgumentParser:
     verify.add_argument("--root", required=True)
     verify.add_argument("--manifest")
     verify.set_defaults(handler=command_verify)
+
+    verify_index = commands.add_parser("verify-index", help="Verify tracked bytes in a temporary export tree")
+    verify_index.add_argument("--repository", required=True)
+    verify_index.set_defaults(handler=command_verify_index)
 
     staged = commands.add_parser("staged", help="Audit the exact Git index")
     staged.add_argument("--repository", required=True)

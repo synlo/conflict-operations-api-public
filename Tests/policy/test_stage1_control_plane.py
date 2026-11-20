@@ -424,7 +424,8 @@ class ProgressAndInstructionTests(FixtureMixin, unittest.TestCase):
 
     def test_unknown_nested_agents_is_rejected(self):
         with tempfile.TemporaryDirectory() as raw:
-            root = Path(raw)
+            # Match repo_root() when a temporary path uses an alias or short name.
+            root = Path(raw).resolve()
             (root / ".codex").mkdir()
             agents = root / "AGENTS.md"
             config = root / ".codex/config.toml"
@@ -452,10 +453,8 @@ class ProgressAndInstructionTests(FixtureMixin, unittest.TestCase):
                     ],
                 },
             )
-            self.assertEqual(
-                "PASS",
-                control.validate_instruction_chain(root, allowlist)["status"],
-            )
+            initial = control.validate_instruction_chain(root, allowlist)
+            self.assertEqual("PASS", initial["status"], initial["errors"])
             nested = root / "nested/AGENTS.md"
             nested.parent.mkdir()
             nested.write_text("# Unexpected\n", encoding="utf-8")
