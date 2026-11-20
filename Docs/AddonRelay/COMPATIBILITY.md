@@ -22,6 +22,10 @@ The examples describe a process configuration, not a fresh qualification of ever
 
 A public artifact should state its version and checksum, runtime and operating-system requirements, supported client versions, available tools, relevant engine versions, and known limitations. Setup, upgrade, removal, and data-retention instructions should match those exact bytes.
 
+## Planned browser dashboard
+
+The target is a responsive browser interface for phones and computers, without a desktop GUI install. Actual browser versions, mobile behavior, sign-in, reconnect and access controls need acceptance before support is claimed. This plan does not certify every browser or provide native Workbench execution on a phone.
+
 ## Result scope
 
 A successful MCP call demonstrates that communication and that tool invocation worked. A static check describes the inputs it inspected. A native compile, resource observation, multiplayer test, and performance comparison each answer separate questions. Reuse earlier evidence only when it remains applicable to the current operation and inputs.

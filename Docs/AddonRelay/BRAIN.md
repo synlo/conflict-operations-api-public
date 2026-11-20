@@ -12,6 +12,8 @@ It is not an announcement of a new language model or a promise that suggestions 
 - Keep project knowledge separate from other customers and projects.
 - Deliberately review information before sharing or exporting it.
 
+The planned browser dashboard may show explicitly selected project findings and result summaries. That does not publish private knowledge, upload the entire project memory, or turn an agent’s progress statement into proof.
+
 Stored advice must not silently grant permission to run an operation or replace the evidence needed to validate a fix. A saved result should state the scope it actually proves.
 
 Project data location, retention, export, deletion, and upgrade behavior must be documented and qualified with the release that offers this feature. Private operational knowledge and the internal implementation are not included in the public documentation.

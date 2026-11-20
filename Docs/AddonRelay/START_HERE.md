@@ -1,10 +1,10 @@
 # Start here
 
-**The first product is a local connection for AI agents. You do not need an AddonRelay window, dashboard, or browser workspace to connect.**
+**Connect your agent through the headless local companion. A browser project dashboard is planned for optional visibility on computers and phones; local connection does not require it.**
 
 ## Check availability
 
-The existing companion provides six read-only diagnostic tools. The complete native framework and persistent project Brain remain planned. This repository contains documentation, not a complete framework installer. Use a verified companion artifact and its matching installation record when one has been supplied to you.
+The existing companion provides six read-only diagnostic tools. The complete native framework, persistent project Brain and responsive project dashboard remain planned. This repository contains documentation, not a complete framework installer. Use a verified companion artifact and its matching installation record when one has been supplied to you.
 
 ## Connect the existing companion
 
@@ -18,6 +18,12 @@ The existing companion provides six read-only diagnostic tools. The complete nat
 The local diagnostic path needs no AddonRelay account, API key, or credits. Any AI provider access belongs to your chosen client. An API key is not a replacement for the local program that reads the selected project or, in a qualified future release, operates Workbench.
 
 A successful connection proves the tool link works. Read each result's scope before treating it as a project or engine acceptance result.
+
+## Optional browser visibility, planned
+
+The intended flow is to sign in, select an account-owned project, and explicitly link an agent or backend with a credential limited to the permitted project/actions. Then open the dashboard on another device to see reported activity, scoped results, freshness, connections and authorized credit information.
+
+A key is not the human account login, and project linking does not upload all source files or private memory. Local activity remains free. Exact linking instructions will be published with the accepted feature; no new event endpoint or command is announced here.
 
 ## Where to go next
 
