@@ -4,6 +4,8 @@
 
 No separate AddonRelay desktop GUI is required. Your supported agent starts the headless local companion. A responsive browser dashboard is planned for project visibility, activity, usage, credits and connections. Local tools remain usable without signing in to it.
 
+The website is the AddonRelay visual interface. The companion is the small local connection needed to access the selected project and authorized Workbench installation; a website login cannot replace that connection.
+
 ## Can I check my project from a phone?
 
 That is the intended dashboard experience. Sign in from a phone to see work reported by a linked project and its last-update time. Workbench still runs on an authorized development host; the phone is the viewing interface. The new project dashboard remains planned, not announced as live.
@@ -11,6 +13,14 @@ That is the intended dashboard experience. Sign in from a phone to see work repo
 ## Is an API key my dashboard login?
 
 No. People use account sign-in. Agents or backends will use credentials limited to their permitted projects and actions. An activity key should not grant access to account administration, purchases or other projects.
+
+## Can I sign in with Google or GitHub?
+
+GitHub is the initial planned public account path. Google is planned as an additional sign-in option for the same AddonRelay account. These docs do not announce open registration or a completed Google integration. Adding a second sign-in method should require deliberate authenticated linking, rather than combining accounts solely because their email addresses match.
+
+## Will I need a subscription?
+
+Local tools and basic linked-project monitoring are intended to remain free. Optional paid hosted work is planned around prepaid usage first. A monthly plan with included usage may follow if it offers useful recurring value, while prepaid access remains an option. No subscription, price, included allowance or timed trial is launched by these docs. See [commercial direction](COMMERCIAL.md).
 
 ## What usage and credits will it show?
 

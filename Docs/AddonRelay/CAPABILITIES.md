@@ -10,13 +10,16 @@ This page distinguishes the existing companion implementation from the planned p
 | Local use without an AddonRelay key | Existing diagnostic path; omit legacy hosted settings. |
 | Complete standalone native framework installer | Planned; not supplied by this repository. |
 | Supported Workbench execution and interruption recovery | Planned public integration, requiring its own qualification. |
+| Supported in-game diagnostic actions | Planned public integration; each action needs its own compatible runtime and observed result. |
 | Persistent project Brain | Planned public integration. |
 | Supporting setup/diagnostics CLI | Planned; no general CLI commands are announced here. |
 | Responsive browser project dashboard | Planned: project activity, result scope, freshness, usage, credits and connections on computers/phones. |
 | Scoped agent/backend activity connection | Planned; supported fields and permissions will be published with acceptance. |
 | Separate desktop GUI | Not required for the intended product. |
 | New public dashboard/account access | Closed pending account, privacy, isolation and browser acceptance. |
+| GitHub and Google sign-in | GitHub is the initial public account direction; Google is an additional planned option. Public registration and account linking are not established by these docs. |
 | Hosted paid investigations and billing | Closed; qualified independently from monitoring. |
+| Optional monthly plan | Future consideration after prepaid service delivery, costs and recurring value are established; no plan or price announced. |
 
 ## What a result means
 
@@ -25,3 +28,5 @@ The six existing tools are `find_symbol`, `resolve_resource`, `guidance`, `diagn
 A static finding does not establish a successful native compile, runtime behavior, multiplayer compatibility, or a repaired defect. Current local report records use `engine-not-tested`. Read coverage and limitations with the result.
 
 No complete controller source, Brain implementation, private corpus, game addon, provider bundle, or production access is distributed by this documentation repository.
+
+The intended customer journey is one supported agent connected to a selected addon, a scoped result retained for later use, and that same result visible through an explicitly linked browser dashboard. Successful private development work does not by itself qualify that journey for unrelated customer projects.

@@ -1,8 +1,10 @@
 # AddonRelay
 
-**Connect your AI agent to your Arma Reforger development project.**
+**Our vision: Your AI can write the mod. Now let it test the mod.**
 
-AddonRelay is being developed as a lightweight local connection for AI-assisted inspection, supported Workbench checks, and project knowledge. **The planned product combines agent-first tools with a browser dashboard for project activity, usage and credits. No separate desktop GUI is required.** Experienced developers can use the same supported integration, with a small command-line setup and diagnostics path planned alongside it.
+AddonRelay is being developed to connect an AI coding agent to an Arma Reforger project, help it run supported checks, and retain useful findings for the next session. Follow that work from the website on a computer or phone. **This is the planned product: native game testing and the new project dashboard are not announced as publicly available by this page.**
+
+The browser will be the AddonRelay visual interface for projects, activity, results, connections and usage. A lightweight headless connector will still run on the authorized Workbench host. No separate desktop GUI is required. Experienced developers can use the same supported integration, with a small command-line setup and diagnostics path planned alongside it.
 
 This is the public documentation and integration home. Implementation source, the detailed development plan, and private project knowledge are maintained separately.
 
@@ -24,7 +26,9 @@ The initial native target is Arma Reforger Workbench on Windows. Other Enfusion 
 
 ## Planned browser dashboard
 
-Sign in from a computer or phone to see explicitly linked projects, agent activity, result scope, last synchronization, connections and AddonRelay credit information. Humans use account sign-in; agents use credentials limited to approved projects and actions. Local tools remain usable without a dashboard account.
+Sign in from a computer or phone to see explicitly linked projects, agent activity, result scope, last synchronization, connections and AddonRelay credit information. The account plan starts with GitHub sign-in and adds Google as another sign-in option for the same account. These choices remain subject to the account feature's qualification; they are not a claim that public registration is open.
+
+Humans use account sign-in. Agents use credentials limited to approved projects and actions, without purchase or account-administration permission by default. Local tools remain usable without a dashboard account. A phone displays the linked results; Workbench continues to run on its authorized development host.
 
 Activity shown in the dashboard covers work reported through supported integrations. It does not imply access to every agent conversation or to an AI provider’s subscription balance. Local activity and paid hosted usage remain distinct. See the [FAQ](Docs/AddonRelay/FAQ.md) and [privacy](Docs/AddonRelay/PRIVACY.md). This is the product direction, not an announcement that the new dashboard or public accounts are live.
 
@@ -32,4 +36,4 @@ Activity shown in the dashboard covers work reported through supported integrati
 
 Use [Issues](https://github.com/synlo/conflict-operations-api-public/issues) for public documentation and product questions. Share only reviewed, non-sensitive reproductions. Use the [security policy](SECURITY.md) for security findings.
 
-Local use remains the intended free offering; optional hosted services are a separate future track. See [commercial direction](Docs/AddonRelay/COMMERCIAL.md). Public visibility does not grant an open-source license; the existing [rights notice](NOTICE.md) applies.
+Local use and basic linked-project monitoring are intended to remain free within the published service limits. The commercial direction is optional prepaid hosted work first, with an optional monthly plan considered later if it provides useful recurring value. No prices, subscriptions or checkout are launched by this documentation. See [commercial direction](Docs/AddonRelay/COMMERCIAL.md). Public visibility does not grant an open-source license; the existing [rights notice](NOTICE.md) applies.
