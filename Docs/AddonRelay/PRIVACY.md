@@ -20,6 +20,10 @@ Project linking will be an explicit choice. The dashboard is intended to receive
 
 Humans use account sign-in; agents and backends use scoped credentials. A project key must not expose other projects or the owner’s whole account. Browser access does not make the underlying project public. Submitted activity covers only what the supported integration reports.
 
+The account plan starts with GitHub and adds Google as another sign-in choice. A sign-in provider is a way to access an AddonRelay account, not automatic permission to read all repositories, files or projects associated with that provider. Linking another sign-in method will require an explicit authenticated action; a matching email address alone must not merge accounts. Exact requested permissions will be shown before the feature is enabled.
+
+Agent connections are separate from human sign-in. A connection intended to report project activity will not receive purchase or account-administration permission by default. Customers should be able to inspect and revoke each supported connection's permissions. These are requirements for the planned feature, not claims that all connection controls are already available.
+
 The planned monitoring flow is separate from paid hosted processing and from contributing a shared lesson. AddonRelay credits do not disclose your AI provider’s balance or conversation history. See [capability status](CAPABILITIES.md) for availability.
 
 ## Public reports

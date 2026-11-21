@@ -1,6 +1,8 @@
 # AddonRelay documentation
 
-The planned product connects AI agents to a local project and lets people view approved project activity, usage and credits in a browser on a computer or phone. No separate desktop GUI is required. This documentation describes the customer interface and its availability. Detailed implementation plans and source are maintained privately.
+The planned product connects AI agents to a local project and lets people view approved project activity, results, usage and credits in a browser on a computer or phone. The website is the visual interface; a headless connection still gives the agent access to the authorized Workbench host. No separate desktop GUI is required. This documentation describes the customer interface and its availability. Detailed implementation plans and source are maintained privately.
+
+The account direction starts with GitHub sign-in and adds Google as another option. Local use stays account-optional. Free local tools and basic monitoring come first, followed by optional prepaid hosted work and, if justified by recurring value, an optional monthly plan. These are product decisions, not live account or payment announcements.
 
 | Guide | What it answers |
 |---|---|

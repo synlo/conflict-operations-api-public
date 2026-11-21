@@ -21,9 +21,11 @@ A successful connection proves the tool link works. Read each result's scope bef
 
 ## Optional browser visibility, planned
 
-The intended flow is to sign in, select an account-owned project, and explicitly link an agent or backend with a credential limited to the permitted project/actions. Then open the dashboard on another device to see reported activity, scoped results, freshness, connections and authorized credit information.
+The intended flow is to sign in, select an account-owned project, and explicitly link an agent or backend with a credential limited to the permitted project/actions. GitHub is the initial account direction, with Google planned as an additional option for the same account. Public signup and exact provider-linking instructions will be published only with the accepted feature.
 
-A key is not the human account login, and project linking does not upload all source files or private memory. Local activity remains free. Exact linking instructions will be published with the accepted feature; no new event endpoint or command is announced here.
+Then open the dashboard on another device to see reported activity, scoped results, freshness, connections and authorized credit information. The website is the AddonRelay visual interface; the headless local companion continues to provide access to the development host.
+
+A key is not the human account login, and project linking does not upload all source files or private memory. Activity connections receive no purchase or account-administration permission by default. Local activity and basic monitoring are intended to remain free within the published limits. Exact linking instructions will be published with the accepted feature; no new event endpoint or command is announced here.
 
 ## Where to go next
 
