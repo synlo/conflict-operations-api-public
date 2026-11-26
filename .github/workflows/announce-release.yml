@@ -1,0 +1,50 @@
+name: Announce a public release on Discord
+
+on:
+  release:
+    types: [published]
+
+permissions: {}
+
+jobs:
+  announce:
+    if: github.event.repository.private == false && github.event.release.draft == false && github.event.release.prerelease == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Send the published release to the announcements channel
+        env:
+          DISCORD_RELEASE_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import { readFileSync } from 'node:fs'
+
+          const webhook = process.env.DISCORD_RELEASE_WEBHOOK
+          if (!webhook) {
+            console.log('Announcement skipped. No Discord webhook is configured.')
+            process.exit(0)
+          }
+          if (!/^https:\/\/discord\.com\/api\/webhooks\/\d+\/[\w.-]+$/.test(webhook)) {
+            throw new Error('Set DISCORD_RELEASE_WEBHOOK to the URL copied from the Discord text channel.')
+          }
+          const { release } = JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'))
+          const response = await fetch(webhook + '?wait=true', {
+            method: 'POST',
+            redirect: 'error',
+            signal: AbortSignal.timeout(15000),
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              allowed_mentions: { parse: [] },
+              embeds: [{
+                title: (release.name?.trim() || release.tag_name).slice(0, 256),
+                url: release.html_url,
+                author: { name: 'AddonRelay releases' },
+                description: '[Try the failed server boot sample](https://addonrelay.freeddns.org/workspace?sample=northbank-boot)',
+                footer: { text: 'Release tag: ' + release.tag_name }
+              }]
+            })
+          })
+          if (!response.ok) throw new Error('Discord returned HTTP ' + response.status + '.')
+          console.log('Discord confirmed the announcement.')
+          JS
