@@ -24,6 +24,7 @@ ALLOWED = {
     ".github/ISSUE_TEMPLATE/bug_report.md",
     ".github/ISSUE_TEMPLATE/feature_request.md",
     ".github/workflows/public-policy.yml",
+    ".github/workflows/announce-release.yml",
     ".github/scripts/check_public_docs.py",
     *(f"Docs/AddonRelay/{name}.md" for name in PAGES),
 }
